@@ -1,17 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import bootstrap from 'bootstrap'
 
 import { Header } from "./components/Header";
-import { Body } from "./components/Body";
+import { BodyGradient } from "./components/BodyGradient";
 
 
 function App() {
   return (
     <Router>
-      <div className="container">
+      <div className="container p-0">
         <Header />
-        <Body />
+        <BodyGradient />
       </div>
     </Router>
   );

@@ -1,4 +1,4 @@
-export function Body() {
+export function BodyGradient() {
     return(
         <div class="p-5 bg-secondary bg-gradient text-white">
             <p>Welcome to Cupcake makes, we're a business based in Plumas Lake, CA</p>
