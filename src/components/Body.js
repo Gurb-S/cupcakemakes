@@ -1,4 +1,4 @@
-import { ProductCard } from "./ProductCard";
+import { ProductCardDisplay } from "./ProductCardDisplay";
 
 export function Body() {
     return(
@@ -10,7 +10,8 @@ export function Body() {
             <div className="container">
             <hr className="mb-3"></hr>
                 <div className="row align-items-start">
-                    <div className="col mb-5">
+                    <ProductCardDisplay />
+                    {/* <div className="col mb-5">
                         <ProductCard />
                     </div>
                     <div className="col mb-5">
@@ -21,7 +22,7 @@ export function Body() {
                     </div>
                     <div className="col mb-5">
                         <ProductCard />
-                    </div>
+                    </div> */}
                 </div>
             </div>
             {/* Move this to the end */}
