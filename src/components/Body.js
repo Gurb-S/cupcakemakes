@@ -8,6 +8,7 @@ export function Body() {
             </h1>
             <p className="text-muted">*All cupcakes start at $15</p>
             <div className="container">
+            <hr className="mb-3"></hr>
                 <div className="row align-items-start">
                     <div className="col mb-5">
                         <ProductCard />

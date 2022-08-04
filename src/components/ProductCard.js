@@ -1,10 +1,10 @@
-export function ProductCard() {
+export function ProductCard(props) {
     return(
         <div className="card">
-            <img src={require("../imgs/flower.jpeg")} className="card-img-top" alt="..."></img>
+            <img src={require(props.cards.img)} className="card-img-top" alt="..."></img>
             <div className="card-body">
-                <h2>Flower Cupcake</h2>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h2>{props.cards.name}</h2>
+                <p className="card-text">{props.cards.desc}</p>
             </div>
         </div>
     )
