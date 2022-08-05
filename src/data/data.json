@@ -3,25 +3,25 @@
         {
             "id": 0,
             "product_name": "Flower cupcake",
-            "product_img": "../imgs/flower.jpeg",
+            "product_img": "flower.jpeg",
             "product_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
         },
         {
             "id": 1,
             "product_name": "Oreo cupcake",
-            "product_img": "../imgs/oreo.jpeg",
+            "product_img": "oreo.jpeg",
             "product_desc": "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
         },
         {
             "id": 2,
             "product_name": "Pretzel cupcake",
-            "product_img": "../imgs/pretzel.jpeg",
+            "product_img": "pretzel.jpeg",
             "product_desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         },
         {
             "id": 3,
             "product_name": "White cupcake",
-            "product_img": "../imgs/white.jpeg",
+            "product_img": "white.jpeg",
             "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a"
         }
     ]
