@@ -1,3 +1,4 @@
+import { Col, Container, Row } from "react-bootstrap";
 import { ProductCardDisplay } from "./ProductCardDisplay";
 
 export function Body() {
@@ -7,24 +8,23 @@ export function Body() {
                 CUPCAKES
             </h1>
             <p className="text-muted">*All cupcakes start at $15</p>
-            <div className="container">
+            <Container>
             <hr className="mb-3"></hr>
-                <div className="row align-items-start">
-                    <ProductCardDisplay />
-                    {/* <div className="col mb-5">
-                        <ProductCard />
-                    </div>
-                    <div className="col mb-5">
-                        <ProductCard />
-                    </div>
-                    <div className="col mb-5">
-                        <ProductCard />
-                    </div>
-                    <div className="col mb-5">
-                        <ProductCard />
-                    </div> */}
-                </div>
-            </div>
+                <Row className="mb-5">
+                    <Col className="justify-content-center">
+                        <ProductCardDisplay />
+                    </Col>                    
+                    <Col>
+                        <ProductCardDisplay />
+                    </Col>
+                    <Col>
+                        <ProductCardDisplay />
+                    </Col>
+                    <Col>
+                        <ProductCardDisplay />
+                    </Col>
+                </Row>
+            </Container>
             {/* Move this to the end */}
             {/* <h4 className="text-center text-decoration-underline">View More</h4> */}
         </div>
