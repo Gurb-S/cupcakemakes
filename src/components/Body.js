@@ -10,13 +10,13 @@ export function Body() {
             <p className="text-muted">*All cupcakes start at $15</p>
             <Container>
             <hr className="mb-3"></hr>
-                <Row className="mb-5">
-                    <Col className="justify-content-center">
+                <Row className="mb-5 mx-auto" xs={2} md={4}>
+                    <Col className="mb-4">
                         <ProductCardDisplay />
                     </Col>                    
                     <Col>
                         <ProductCardDisplay />
-                    </Col>
+                    </Col>  
                     <Col>
                         <ProductCardDisplay />
                     </Col>

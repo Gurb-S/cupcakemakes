@@ -5,7 +5,7 @@ export function ProductCardDisplay() {
     const product = products.products
     console.log(product[0].product_img);
     return(
-        <Card style={{ width: '11rem' }}>
+        <Card style={{ width: '10rem' }}>
             <Card.Img variant='top' src={require(`../imgs/flower.jpeg`)} />
             <Card.Body className='p-1 pt-2'>
                 <Card.Title className='fs-6'>{product[0].product_name}</Card.Title>
