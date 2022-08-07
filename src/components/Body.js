@@ -1,14 +1,14 @@
 import { Container, Row } from "react-bootstrap";
-import { ProductCardDisplay } from "./ProductCardDisplay";
-import products from '../data/data.json'
+import { ProductCard } from "./ProductCard";
+import cupcake from '../data/cupcake.json'
 
 
 export function Body() {
-    const product = products.products
+    const product = cupcake.products
     let key;
-    const cards = product.map((card) => {
+    const cupcakecards = product.map((card) => {
         key++
-        return <ProductCardDisplay 
+        return <ProductCard 
             img={card.product_img}
             name={card.product_name}
             key={key}
@@ -22,12 +22,11 @@ export function Body() {
             <p className="text-muted">*All cupcakes start at $15</p>
             <Container>
             <hr className="mb-3"></hr>
-                <Row className="mb-5 m-auto" xs={2} md={4}>
-                    {cards}
+                <Row className="mb-2 m-auto" xs={2} md={4}>
+                    {cupcakecards}
                 </Row>
             </Container>
-            {/* Move this to the end */}
-            {/* <h4 className="text-center text-decoration-underline">View More</h4> */}
+            <a  href="https://www.google.com" className="text-center fs-3">View More</a>
         </div>
     )
 }
