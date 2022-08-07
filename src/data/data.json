@@ -23,6 +23,30 @@
             "product_name": "White cupcake",
             "product_img": "white.jpeg",
             "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a"
+        },
+        {
+            "id": 4,
+            "product_name": "Assortment",
+            "product_img": "assortment.jpeg",
+            "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a"
+        },
+        {
+            "id": 5,
+            "product_name": "Swirl cupcake",
+            "product_img": "swirl.jpeg",
+            "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a"
+        },
+        {
+            "id": 6,
+            "product_name": "Pink cupcake",
+            "product_img": "pink.jpeg",
+            "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a"
+        },
+        {
+            "id": 7,
+            "product_name": "Carmel cupcake",
+            "product_img": "carmel.jpeg",
+            "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a"
         }
     ]
 }
