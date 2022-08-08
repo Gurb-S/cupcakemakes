@@ -2,9 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Container } from "react-bootstrap";
 
+// Components
 import { Header } from "./components/Header";
-import { BodyGradient } from "./components/BodyGradient";
 import { Body } from "./components/Body";
+import { ProductPage } from "./components/ProductPage";
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Body />}/>
-          <Route path="/test" element={<BodyGradient />}/>
+          <Route path="/products/:id" element={<ProductPage />}/>
         </Routes>
       </Container>
     </Router>
