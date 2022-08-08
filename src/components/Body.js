@@ -13,6 +13,7 @@ export function Body() {
     const cupcakeCards = cupcakes.map((card) => {
         key++
         return <ProductCard 
+            id={card.id}
             img={card.product_img}
             name={card.product_name}
             key={key}
