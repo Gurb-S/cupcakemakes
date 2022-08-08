@@ -1,29 +1,27 @@
 import { Container, Row } from "react-bootstrap";
 import { ProductCard } from "./ProductCard";
-import cupcake from '../data/cupcake.json'
-import cake from '../data/cake.json'
+import products from '../data/data.json'
 
 
 export function Body() {
-    const cupcake_product = cupcake.products
-    const cake_product = cake.products
-    console.log(cake_product)
+    const cupcakes = products.cupcakes
+    const cakes = products.cakes
+    console.log(cupcakes)
+    console.log(cakes)
     let key;
-    // const cupcakeCards = cupcake_product.map((card) => {
-    //     key++
-    //     return <ProductCard 
-    //         img={card.product_img}
-    //         name={card.product_name}
-    //         key={key}
-    //     />
-    // })
-
-    const cakeCards = cake_product.map((card) => {
+    const cupcakeCards = cupcakes.map((card) => {
         key++
         return <ProductCard 
             img={card.product_img}
             name={card.product_name}
             key={key}
+        />
+    })
+
+    const cakeCards = cakes.map((card) => {
+        return <ProductCard 
+            img={card.product_img}
+            name={card.product_name}
         />
     })
     return(
@@ -32,14 +30,19 @@ export function Body() {
                 CUPCAKES
             </h1>
             <p className="text-muted">*All cupcakes start at $15</p>
-            {/* <Container>
+            <Container>
             <hr className="mb-3"></hr>
                 <Row className="mb-2 m-auto" xs={2} md={4}>
                     {cupcakeCards}
                 </Row>
-            </Container> */}
+            </Container>
             <a  href="https://www.google.com" className="text-center fs-3">View More</a>
             <Container>
+            {/* <hr className="mb-3"></hr> */}
+            <h1 className="mt-3 fs-1">
+                CAKES
+            </h1>
+            <p className="text-muted">*All cakes must be custom ordered</p>
             <hr className="mb-3"></hr>
                 <Row className="mb-2 m-auto" xs={2} md={4}>
                     {cakeCards}

@@ -1,5 +1,5 @@
 {
-    "products" : [
+    "cupcakes" : [
         {
             "id": 0,
             "product_name": "Flower cupcake",
@@ -47,6 +47,32 @@
             "product_name": "Carmel cupcake",
             "product_img": "cupcake/carmel.jpeg",
             "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a"
+        }
+    ],
+    "cakes": [
+        {
+            "id": 0,
+            "product_name": "Sweet 16",
+            "product_img": "cake/16.jpeg",
+            "product_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+        },
+        {
+            "id": 1,
+            "product_name": "Agam cake",
+            "product_img": "cake/agam.jpeg",
+            "product_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+        },
+        {
+            "id": 2,
+            "product_name": "Blurry cake",
+            "product_img": "cake/blur.jpeg",
+            "product_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+        },
+        {
+            "id": 3,
+            "product_name": "Truck cake",
+            "product_img": "cake/truck.jpeg",
+            "product_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
         }
     ]
 }
