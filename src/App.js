@@ -12,8 +12,10 @@ function App() {
     <Router>
       <Container className="p-0">
         <Header />
-        <BodyGradient />
-        <Body /> 
+        <Routes>
+          <Route path="/" element={<Body />}/>
+          <Route path="/test" element={<BodyGradient />}/>
+        </Routes>
       </Container>
     </Router>
   );
