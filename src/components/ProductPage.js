@@ -1,15 +1,22 @@
-import React from 'react'
-import { Carousel, Container } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react'
+import { Carousel, Container, Form, Button, Row, Col } from 'react-bootstrap';
 import { useParams } from 'react-router-dom'
 import products from '../data/data.json'
 
 export function ProductPage() {
     const {id } = useParams();
     const cupcake = products.cupcakes[id];
-    console.log(cupcake)
-    const alert = () => {
-        alert('It WORKED!!!🎉🎉🎉')
-    }
+
+    const [ count, setCount ] = useState(1);
+    // console.log(cupcake)
+    // const counter = (type) => {
+    //     if(type === 'plus'){
+    //         console.log('this is addition')
+    //         setCount(count + 1)
+    //         console.log(count)
+    //     }
+    // }
+
     return(
         <Container className='text-center'>
             <h1 className="my-4 fs-1">{cupcake.product_name}</h1>
@@ -30,16 +37,40 @@ export function ProductPage() {
             <div className='text-start'>
                 <h4 className='mt-3'>$15 per dozen</h4>
                 <p>{cupcake.product_desc}</p>
-            </div>
-            <div>
-            {/* <button type="submit">
-            <p><i class="icon-user icon-white"></i></p>
-            </button> */}
-            <i class="bi bi-2-square-fill"></i>
-            <svg onClick={alert} xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-heart-eyes" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434z"/></svg>
+            </div>      
+                <Form>
+                    <Container className='mx-auto' style={{ width: '200px' }}>
+                        <Row xs='auto'>
+                            <Col className='ms-3 minus' onClick={() => count >0 ? setCount(count - 1)  : null}> 
+                                <svg style={{ cursor: 'pointer' }} id="minus" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" className="bi bi-patch-minus-fill" viewBox="0 0 16 16">
+                                <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zM6 7.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1 0-1z"/>
+                                </svg>
+                            </Col>
+                            <Col>
+                                <p className='mt-1'>{count}</p>
+                            </Col>
+                            <Col onClick={() => setCount(count + 1)}>
+                                <svg style={{ cursor: 'pointer' }}  xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" className="bi bi-patch-plus-fill" viewBox="0 0 16 16">
+                                <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zM8.5 6v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 1 0z"/>
+                                </svg>
+                            </Col>
+                        </Row>
+                    </Container>
+                    <Row>
+                        <Col xs={12}>
+                            <Form.Text className='text-muted'>
+                                Cupcakes are sold by the dozen
+                            </Form.Text>
+                        </Col>
+                        <Col className='w-25 p-3'>
+                            <Button variant="primary" type="submit">
+                                Add to Cart
+                            </Button>
+                        </Col>
+                    </Row>
+                </Form>
             {/* buttons go here */}
             {/* add to cart button */}
-            </div>
        </Container>
     )
 }
