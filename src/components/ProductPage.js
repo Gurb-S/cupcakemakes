@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Carousel, Container, Form, Button, Row, Col } from 'react-bootstrap';
 import { useParams } from 'react-router-dom'
 import products from '../data/data.json'
