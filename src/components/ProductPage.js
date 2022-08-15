@@ -3,6 +3,7 @@ import { Carousel, Container, Form, Button, Row, Col } from 'react-bootstrap';
 import { useParams } from 'react-router-dom'
 import products from '../data/data.json'
 import SiteContext from '../context/Context';
+import { toast, ToastContainer } from 'react-toastify';
 
 export function ProductPage() {
     const { id } = useParams();
@@ -21,8 +22,8 @@ export function ProductPage() {
     // when submitted creates a cookie with the name of the cupcake and number of cupcakes
     const handleSubmit = (e) =>{
         e.preventDefault();
-        alert('Submitted!!')
-        setCookie(cupcakeName, count)
+        setCookie(cupcakeName, count);
+        toast.success('Item has been added')
     }
 
     return(
@@ -77,6 +78,7 @@ export function ProductPage() {
                         </Col>
                     </Row>
                 </Form>
+                <ToastContainer />
        </Container>
     )
 }
