@@ -1,21 +1,29 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Carousel, Container, Form, Button, Row, Col } from 'react-bootstrap';
 import { useParams } from 'react-router-dom'
 import products from '../data/data.json'
+import SiteContext from '../context/Context';
 
 export function ProductPage() {
-    const {id } = useParams();
+    const { id } = useParams();
+    // gets the cupcake who's id matches the number in the url
     const cupcake = products.cupcakes[id];
 
+    //import from context api
+    const { setCookie } = useContext(SiteContext);
+
+    // replaces spaces in cupcake name with an underscore "_"
+    let cupcakeName = cupcake.product_name.replace(/\s/g,"_");
+
+    // keeps track of counter on page
     const [ count, setCount ] = useState(1);
-    // console.log(cupcake)
-    // const counter = (type) => {
-    //     if(type === 'plus'){
-    //         console.log('this is addition')
-    //         setCount(count + 1)
-    //         console.log(count)
-    //     }
-    // }
+
+    // when submitted creates a cookie with the name of the cupcake and number of cupcakes
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+        alert('Submitted!!')
+        setCookie(cupcakeName, count)
+    }
 
     return(
         <Container className='text-center'>
@@ -38,7 +46,7 @@ export function ProductPage() {
                 <h4 className='mt-3'>$15 per dozen</h4>
                 <p>{cupcake.product_desc}</p>
             </div>      
-                <Form>
+                <Form onSubmit={handleSubmit}>
                     <Container className='mx-auto' style={{ width: '200px' }}>
                         <Row xs='auto'>
                             <Col className='ms-3 minus' onClick={() => count >0 ? setCount(count - 1)  : null}> 
@@ -69,8 +77,6 @@ export function ProductPage() {
                         </Col>
                     </Row>
                 </Form>
-            {/* buttons go here */}
-            {/* add to cart button */}
        </Container>
     )
 }
