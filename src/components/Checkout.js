@@ -3,27 +3,30 @@ import SiteContext from "../context/Context"
 
 export function Checkout() {
 
+    // TODO: Clear cart ability needs to be added
     const { allCookies } = useContext(SiteContext)
-    //console.log(allCookies)
-    // const items = Object.keys(allCookies).map(key => 
-    //     return {key}: {allCookies[key]}
-    // )
+
     const items =  Object.entries(allCookies)
 
-    console.log(items)
-    // const itemName = Object.keys(allCookies).map(key => 
-    //     <option value={key}>{allCookies[key]}</option>
-    // )
+    const array = items.map(item  => {
+        return {
+            productName : item[0],
+            productCount: item[1]
+        }
+    })
+    console.log(array)
+    console.log(array[0].productName)
+    const itemArray = array.map(item => {
+        return <>
+            <h2>{item.productName}: {item.productCount}</h2> 
+        </> 
+    })
+
     return (
         <div>
             <h1>This the checkout page</h1>
             <div>
-                {/* {Object.keys(allCookies).map((key)=>(
-                    <div>
-                        <p>{key}</p>
-                        <p>{allCookies[`${key}`]}</p>
-                    </div>
-                ))} */}
+                {itemArray}
             </div>
         </div>
     )
