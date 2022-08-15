@@ -14,8 +14,11 @@ export function SiteProvider({ children }){
         Cookies.set(`${name}`, count, cookieOptions)
     }
 
+    const allCookies = Cookies.get();
+
     const values = {
-        setCookie
+        setCookie,
+        allCookies
     }
     //context provider that provides all the functions
     return(

@@ -12,7 +12,7 @@ export function Header() {
                             <Nav.Link href="/">Home</Nav.Link>
                             <Nav.Link href="/">Cupcake Gallery</Nav.Link>
                             <Nav.Link href="/">Cake Gallery</Nav.Link>
-                            <Nav.Link href="/">Cart</Nav.Link>
+                            <Nav.Link href="/checkout">Cart</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

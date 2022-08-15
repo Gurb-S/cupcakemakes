@@ -23,7 +23,9 @@ export function ProductPage() {
     const handleSubmit = (e) =>{
         e.preventDefault();
         setCookie(cupcakeName, count);
-        toast.success('Item has been added')
+        toast.success('Item has been added', {
+            position: toast.POSITION.TOP_CENTER
+          })
     }
 
     return(
