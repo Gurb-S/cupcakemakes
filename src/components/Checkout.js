@@ -9,6 +9,8 @@ export function Checkout() {
     // * Error: object is not valid as React child
     const { allCookies } = useContext(SiteContext)
 
+    console.log(allCookies)
+
     const items =  Object.entries(allCookies)
 
     const array = items.map(item  => {
@@ -20,9 +22,7 @@ export function Checkout() {
     console.log(array)
     console.log(array[0].productName)
     const itemArray = array.map(item => {
-        return <>
-            <h2>{item.productName}: {item.productCount}</h2> 
-        </> 
+        return <h2>{item.productName}: {item.productCount}</h2> 
     })
 
     return (
