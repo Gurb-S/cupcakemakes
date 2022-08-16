@@ -5,7 +5,7 @@ export function Header() {
         <>
             <Navbar bg="light" expand="lg">
                 <Container>
-                    <Navbar.Brand href="/"><img src={require("../imgs/logo.jpeg")} height={50} width={50} alt="logo" className="rounded-circle"></img></Navbar.Brand>
+                    <Navbar.Brand href="/"><img src={"https://ik.imagekit.io/dod5kjssy/imgs/logo"} height={50} width={50} alt="logo" className="rounded-circle"></img></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
