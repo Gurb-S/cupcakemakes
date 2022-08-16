@@ -33,20 +33,20 @@ export function ProductPage() {
             <h1 className="my-4 fs-1">{cupcake.product_name}</h1>
             <Carousel>
                 <Carousel.Item>
-                    <img className="d-block w-100" src={require(`../imgs/${cupcake.product_img}`)} alt="img of cupcake"/>
+                    <img className="d-block w-100" src={`${cupcake.product_img}`} width={300} height={300} alt="img of cupcake" />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="d-block w-100" src={require(`../imgs/${products.cupcakes[1].product_img}`)} alt="img of cupcake" />
+                    <img className="d-block w-100" src={`${products.cupcakes[1].product_img}`} width={300} height={300} alt="img of cupcake" />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="d-block w-100" src={require(`../imgs/${products.cupcakes[2].product_img}`)} alt="img of cupcake" />
+                    <img className="d-block w-100" src={`${products.cupcakes[2].product_img}`} width={300} height={300} alt="img of cupcake" />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="d-block w-100" src={require(`../imgs/${products.cupcakes[3].product_img}`)} alt="img of cupcake"/>
+                    <img className="d-block w-100" src={`${products.cupcakes[3].product_img}`} width={300} height={300} alt="img of cupcake"/>
                 </Carousel.Item>
             </Carousel>
             <div className='text-start'>
-                <h4 className='mt-3'>$15 per dozen</h4>
+                <h1 className='mt-3 fs-4'>$15 per dozen</h1>
                 <p>{cupcake.product_desc}</p>
             </div>      
                 <Form onSubmit={handleSubmit}>
@@ -73,7 +73,7 @@ export function ProductPage() {
                                 Cupcakes are sold by the dozen
                             </Form.Text>
                         </Col>
-                        <Col className='w-25 p-3'>
+                        <Col className='w-30 p-3'>
                             <Button variant="primary" type="submit">
                                 Add to Cart
                             </Button>
