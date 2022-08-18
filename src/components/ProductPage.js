@@ -14,7 +14,7 @@ export function ProductPage() {
     const { setCookie } = useContext(SiteContext);
 
     // replaces spaces in cupcake name with an underscore "_"
-    let cupcakeName = cupcake.product_name.replace(/\s/g,"_");
+    let cupcakeName = cupcake.product_name;
 
     // keeps track of counter on page
     const [ count, setCount ] = useState(1);
