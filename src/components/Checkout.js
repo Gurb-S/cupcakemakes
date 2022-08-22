@@ -1,5 +1,6 @@
 import React, { useContext } from "react"
 import SiteContext from "../context/Context"
+import products from '../data/data.json'
 
 export function Checkout() {
 
@@ -7,6 +8,7 @@ export function Checkout() {
     // TODO: crashes if cart is visited when empty
     // TODO: issue with items not being displayed, replicated on phone
     // * Error: object is not valid as React child
+    // * Solution: seems like an issue with the view app on network. Seems like this isn't an issue in production
 
     const { allCookies } = useContext(SiteContext)
 
@@ -42,7 +44,7 @@ export function Checkout() {
         <div>
             <h1 className="text-center mt-3">Checkout</h1>
             <div>
-                {allCookies && itemArray.length > 0 ? itemArray : <h2>Cart is Empty</h2>}
+                {allCookies && itemArray.length > 0 ? itemArray : <h2 className="text-center mt-5">Cart is Empty</h2>}
             </div>
         </div>
     )
