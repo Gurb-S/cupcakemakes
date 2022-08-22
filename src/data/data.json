@@ -4,49 +4,57 @@
             "id": 0,
             "product_name": "Flower cupcake",
             "product_img": "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/flower",
-            "product_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+            "product_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+            "product_price": 15
         },
         {
             "id": 1,
             "product_name": "Oreo cupcake",
             "product_img": "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/oreo",
-            "product_desc": "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+            "product_desc": "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+            "product_price": 15
         },
         {
             "id": 2,
             "product_name": "Pretzel cupcake",
             "product_img": "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/pretzel",
-            "product_desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "product_desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "product_price": 15
         },
         {
             "id": 3,
             "product_name": "White cupcake",
             "product_img": "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/white",
-            "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a"
+            "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a",
+            "product_price": 15
         },
         {
             "id": 4,
             "product_name": "Assortment",
             "product_img": "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/assortment",
-            "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a"
+            "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a",
+            "product_price": 15
         },
         {
             "id": 5,
             "product_name": "Swirl cupcake",
             "product_img": "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/swirl",
-            "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a"
+            "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a",
+            "product_price": 15
         },
         {
             "id": 6,
             "product_name": "Pink cupcake",
             "product_img": "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/pink",
-            "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a"
+            "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a",
+            "product_price": 15
         },
         {
             "id": 7,
             "product_name": "Carmel cupcake",
             "product_img": "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/carmel",
-            "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a"
+            "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a",
+            "product_price": 15
         }
     ],
     "cakes": [
