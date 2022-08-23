@@ -33,7 +33,7 @@ export function Body() {
                 <h1 className="mt-3 fs-1">
                     CUPCAKES
                 </h1>
-                <p className="text-muted">*All cupcakes start at $15</p>
+                <p className="text-muted">*All cupcakes start at $15 a dozen</p>
                 <Container>
                 <hr className="mb-3"></hr>
                     <Row className="mb-2 m-auto" xs={2} md={4}>
