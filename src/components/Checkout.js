@@ -27,7 +27,10 @@ export function Checkout() {
         }
     })
 
+    let mom = [];
+
     const cartArray = cupcakeDetails.map(item =>{
+        mom.push({name: item.productName,price: item.productPrice})
         if(item.productCount > 0){
             return <CartCards 
                 img={item.productImg}
@@ -37,11 +40,12 @@ export function Checkout() {
             />
         }
     })
-
+    console.log(mom)
     return (
         <div>
             <h1 className="text-center mt-3">Checkout</h1>
             {allCookies && cartArray.length > 0 ? cartArray : <h2 className="text-center mt-5">Cart is Empty</h2>}
+            
         </div>
     )
 }
