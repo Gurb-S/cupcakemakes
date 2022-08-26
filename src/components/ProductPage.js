@@ -23,8 +23,9 @@ export function ProductPage() {
     const handleSubmit = (e) =>{
         e.preventDefault();
         setCookie(cupcakeName, count);
-        toast.success('Item has been added', {
-            position: toast.POSITION.TOP_CENTER
+        toast.success(`${cupcakeName} added to cart!`, {
+            position: toast.POSITION.TOP_CENTER,
+            autoClose: 1800,
           })
     }
 
@@ -80,7 +81,7 @@ export function ProductPage() {
                         </Col>
                     </Row>
                 </Form>
-                <ToastContainer />
+                <ToastContainer/>
        </Container>
     )
 }
