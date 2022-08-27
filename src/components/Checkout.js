@@ -1,11 +1,13 @@
-import React, { useContext } from "react"
+import React, { useContext, useEffect, useState } from "react"
 import SiteContext from "../context/Context"
 import { CartCards } from "./CartCards"
 import products from '../data/data.json'
+import { Total } from "./Total"
+import { OrderDate } from "./OrderDate"
 
 export function Checkout() {
     
-    const { allCookies } = useContext(SiteContext)
+    const { allCookies, total } = useContext(SiteContext)
 
     const cupcakesInCart =  Object.entries(allCookies)
 
@@ -27,10 +29,7 @@ export function Checkout() {
         }
     })
 
-    let mom = [];
-
     const cartArray = cupcakeDetails.map(item =>{
-        mom.push({name: item.productName,price: item.productPrice})
         if(item.productCount > 0){
             return <CartCards 
                 img={item.productImg}
@@ -40,12 +39,14 @@ export function Checkout() {
             />
         }
     })
-    console.log(mom)
+
+
     return (
         <div>
             <h1 className="text-center mt-3">Checkout</h1>
             {allCookies && cartArray.length > 0 ? cartArray : <h2 className="text-center mt-5">Cart is Empty</h2>}
-            
+            <Total />
+            <OrderDate />
         </div>
     )
 }
