@@ -28,7 +28,7 @@ export function CartCards(props) {
     },[])
 
     const removeItem = () => {
-        const elem = document.getElementById("cartCard");
+        const elem = document.getElementById(`${props.name}`);
         elem.remove();
         Cookies.remove(`${props.name}`)
         console.log(elem)
@@ -36,7 +36,7 @@ export function CartCards(props) {
     console.log(total)
         
     return(
-        <div className="d-flex border border-secondary rounded m-3" id="cartCard">
+        <div className="d-flex border border-secondary rounded m-3" id={props.name}>
             <div className="flex-shrink-0 my-2 ps-1">
                 <img className="rounded" src={`${props.img}`} alt="img of cupcake" width={80} height={80}/>
             </div>
