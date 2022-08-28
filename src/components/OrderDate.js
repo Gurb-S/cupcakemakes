@@ -1,32 +1,23 @@
-import React, { useEffect, useState } from "react"
-import { Form } from "react-bootstrap"
-import DatePicker from 'react-datepicker';
+import React, { useState } from "react"
 import { addDays } from 'date-fns'
+import Calendar from "react-calendar";
+import 'react-calendar/dist/Calendar.css';
+
 
 
 export function OrderDate() {
 
-    // const [ minAllowDate, setMinAllowDate ] = useState('');
-    // const [ selectedDate, setSelectedDate ] = useState(null);
-
-    // useEffect(() => {
-    //     const todayDate = new Date().toLocaleString().split(',')
-    //     setMinAllowDate(todayDate[0])
-    //     console.log(todayDate[0])
-    // },[])
-    const [startDate, setStartDate] = useState(new Date());
+    const [value, onChange] = useState(new Date());
+    console.log(value)
 
     return(
         <form>
-            <div className="d-flex justify-content-center align-items-center">
-                <label className="mt-2 ms-2 fs-5">Need by:</label>
-                <DatePicker className="text-center"
-                    selected={startDate}
-                    onChange={(date) => setStartDate(date)}
-                    minDate={addDays(new Date(), 7)}
-                    maxDate={addDays(new Date(), 90)}
-                    placeholderText="Select a date before 5 days in the future"
-                />
+            <div className="text-center">
+                <p className="fs-4 mb-1">When do you need your order by?</p>
+                <p className="text-muted ">We require a 1 week notice in advance</p>
+            </div>
+            <div className="d-flex justify-content-center">
+                <Calendar onChange={onChange} value={value} minDate={addDays(new Date(), 7)} maxDate={addDays(new Date(), 90)}/>
             </div>
         </form>
     )
