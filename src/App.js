@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Container } from "react-bootstrap";
 import { SiteProvider } from "./context/Context";
 import 'react-toastify/dist/ReactToastify.css';
-import "react-datepicker/dist/react-datepicker.css";
 
 
 // Components
