@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Header } from "./components/Header";
 import { Body } from "./components/Body";
 import { ProductPage } from "./components/ProductPage";
-import { Checkout } from "./components/Checkout";
+import { Cart, Checkout } from "./components/Cart";
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Body />}/>
             <Route path="/products/:id" element={<ProductPage />}/>
-            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/cart" element={<Cart />} />
           </Routes>
         </Container>
       </Router>
