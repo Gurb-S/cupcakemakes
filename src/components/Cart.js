@@ -7,7 +7,7 @@ import { Button } from "react-bootstrap"
 
 export function Cart() {
     
-    const { cupcakesInCart, allCookiesObject } = useContext(SiteContext)
+    const { cupcakesInCart, allCookiesObject, numberOfItemsInCart } = useContext(SiteContext)
 
     console.log(cupcakesInCart)
 
@@ -32,10 +32,10 @@ export function Cart() {
     return (
         <div>
             <h1 className="text-center mt-3">Cart</h1>
-            {cupcakesInCart && cupcakeDetails.length > 0 ? cupcakeDetails : <h2 className="text-center mt-5">Cart is Empty</h2>}
-            <Total cupcakes={cupcakeDetails}/>
-            {cupcakesInCart && cupcakeDetails.length > 0 ? <OrderDate /> : null}
-            {cupcakesInCart && cupcakeDetails.length > 0 
+            {numberOfItemsInCart ? cupcakeDetails : <h2 className="text-center mt-5">Cart is Empty</h2>}
+            <Total />
+            {numberOfItemsInCart ? <OrderDate /> : null}
+            {numberOfItemsInCart 
             ?   
             <form onClick={handleSubmit} className="text-center my-4">
                 <Button variant="outline-success">Place Order</Button>
