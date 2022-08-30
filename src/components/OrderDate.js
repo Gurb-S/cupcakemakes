@@ -1,14 +1,22 @@
-import React, { useState } from "react"
+import React, { useContext, useEffect, useState } from "react"
 import { addDays } from 'date-fns'
 import Calendar from "react-calendar";
 import 'react-calendar/dist/Calendar.css';
+import SiteContext from "../context/Context";
 
 
 
 export function OrderDate() {
 
+    const { setCookie } = useContext(SiteContext);
+
     const [value, onChange] = useState(new Date());
     console.log(value)
+    
+
+    useEffect(() => {
+        setCookie('Order Date', value)
+    },[value])
 
     return(
         <form>
