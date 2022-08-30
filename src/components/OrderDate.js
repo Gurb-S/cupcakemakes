@@ -11,8 +11,6 @@ export function OrderDate() {
     const { setCookie } = useContext(SiteContext);
 
     const [value, onChange] = useState(new Date());
-    console.log(value)
-    
 
     useEffect(() => {
         setCookie('Order Date', value)
