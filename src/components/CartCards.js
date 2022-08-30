@@ -11,21 +11,14 @@ export function CartCards(props) {
     // * Error: object is not valid as React child
     // * Solution: seems like an issue with the view app on network. Seems like this isn't an issue in production
 
-    //let test = (props.amount * 0)
-    //console.log(props.amount)
     const [ count, setCount ] = useState(parseInt(props.amount))
 
     //import from context api
-    const { setCookie, total, addTotal } = useContext(SiteContext);
+    const { setCookie } = useContext(SiteContext);
 
     useEffect(() =>{
         setCookie(props.name,count)
-        
     },[count])
-
-    useEffect(() => {
-        addTotal(count * props.price);
-    },[])
 
     const removeItem = () => {
         const elem = document.getElementById(`${props.name}`);
@@ -33,7 +26,6 @@ export function CartCards(props) {
         Cookies.remove(`${props.name}`)
         console.log(elem)
     }
-    console.log(total)
         
     return(
         <div className="d-flex border border-secondary rounded m-3" id={props.name}>
