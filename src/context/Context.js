@@ -10,28 +10,19 @@ export function SiteProvider({ children }){
             expires: 1, //1 day
             secure: true,  
             sameSite: "None"
-          };
+        };
         Cookies.set(`${name}`, count, cookieOptions)
     }
 
-    const [total, setTotal] = useState(0);
-
-    const addTotal = (price) => {
-        setTotal((prevState) => prevState + price )
-    }
-
-    const removeTotal = (price) => (
-        setTotal((prevState) => prevState - price )
-    )
-
     const allCookies = Cookies.get();
+
+    const cupcakesInCart = Object.entries(allCookies)
 
     const values = {
         setCookie,
-        allCookies,
-        total,
-        addTotal
+        cupcakesInCart
     }
+
     //context provider that provides all the functions
     return(
         <SiteContext.Provider value={values}>
