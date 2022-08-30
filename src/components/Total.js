@@ -1,15 +1,14 @@
 import React, { useContext, useEffect } from "react"
 import SiteContext from "../context/Context"
-import products from '../data/data.json'
 
-export function Total(props) {
+export function Total() {
 
     // TODO: render automatically and change total everytime user adds more items while in cart
 
-    const { setCookie } = useContext(SiteContext);
-    console.log(props.cupcakes)
+    const { setCookie, cupcakesInCart } = useContext(SiteContext);
+    console.log(cupcakesInCart)
 
-    const totalPrice = props.cupcakes.map(cupcake => {
+    const totalPrice = cupcakesInCart.map(cupcake => {
         if(cupcake.productImg){
             return parseInt(cupcake.productCount) * cupcake.productPrice
         }
@@ -19,7 +18,6 @@ export function Total(props) {
     })
 
     let sum = totalPrice.reduce((a,b) => a + b,0);
-
 
     useEffect(() => {
         setCookie('Total', sum)
