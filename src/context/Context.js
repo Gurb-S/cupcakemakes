@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Cookies from "js-cookie";
 import products from '../data/data.json'
 
@@ -20,40 +20,54 @@ export function SiteProvider({ children }){
 
     // * READING COOKIES
 
-    // target all cookies and stories them in the variable ~allCookies~
-    const allCookies = Cookies.get();
 
-    // takes the cookies in ~allCookies~ and converts them in a JSON object and stores in ~allCookiesObject~
-    const allCookiesObject = Object.entries(allCookies);
+    const getCookies = () => {
+        // target all cookies and stories them in the variable ~allCookies~
+        const allCookies = Cookies.get();
+        
+        // takes the cookies in ~allCookies~ and converts them in a JSON object and stores in ~allCookiesObject~
+        const allCookiesObject = Object.entries(allCookies);
+        return allCookiesObject
+    }
 
     /**
      * for every item in ~allCookiesObject~ it looks through the cupcake data and checks if the item in ~allCookiesObject~ matches
      * an item in the cupcake data and if so then also get the price and img for the item 
      * then returns the name, amount ordered, image of cupcake, and price of cupcake as an object
      */
+
+    //const [numberOfItemsInCart, setNumberOfItemsInCart] = useState(0)
     let numberOfItemsInCart = 0; //keeps track of cupcakes in cart
-    const cupcakesInCart = allCookiesObject.map(cupcake => {
-        let productImgs;
-        let productPrices;
-        // loops through cupcake data file
-        for(let j = 0; j < products.cupcakes.length;j++){
-            if(products.cupcakes[j].product_name === cupcake[0]){
-                productImgs = products.cupcakes[j].product_img
-                productPrices = products.cupcakes[j].product_price
-                numberOfItemsInCart++
+    const createCupcakeObject = () => {
+        const allCookiesObject = getCookies();
+        const cupcakesInCart = allCookiesObject.map(cupcake => {
+            let productImgs;
+            let productPrices;
+            // loops through cupcake data file
+            for(let j = 0; j < products.cupcakes.length;j++){
+                if(products.cupcakes[j].product_name === cupcake[0]){
+                    productImgs = products.cupcakes[j].product_img
+                    productPrices = products.cupcakes[j].product_price
+                    numberOfItemsInCart ++
+                }
             }
-        }
-        return {
-            productName: cupcake[0],
-            productCount: cupcake[1],
-            productImg: productImgs,
-            productPrice: productPrices
-        }
-    })
-    
+            return {
+                productName: cupcake[0],
+                productCount: cupcake[1],
+                productImg: productImgs,
+                productPrice: productPrices
+            }
+        })
+        return cupcakesInCart
+    }
+
+    const cupcakesInCart = createCupcakeObject();
+
+    //console.log(numberOfItemsInCart)
     //set total
     const [ total, setTotal ] = useState([]);
     const getTotal = () => {
+        const cupcakesInCart = createCupcakeObject();
         const totalPrice = cupcakesInCart.map(cupcake => {
             if(cupcake.productImg){
                 return parseInt(cupcake.productCount) * cupcake.productPrice
@@ -62,11 +76,12 @@ export function SiteProvider({ children }){
                 return 0
             }
         })
+        //console.log(allCookiesObject)
         let sum = totalPrice.reduce((a,b) => a + b,0);
         setCookie('Total', sum)
         setTotal(sum)
         const test = Cookies.get('Total')
-        console.log(test)
+        //console.log(createCupcakeObject())
         console.log(`🎆🎆🎆${sum}`)
         return sum
     }
@@ -75,8 +90,8 @@ export function SiteProvider({ children }){
     const values = {
         setCookie,
         cupcakesInCart,
-        allCookiesObject,
         numberOfItemsInCart,
+        createCupcakeObject,
         total,
         getTotal
     }
