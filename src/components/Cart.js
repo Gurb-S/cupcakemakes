@@ -7,9 +7,9 @@ import { Button } from "react-bootstrap"
 
 export function Cart() {
     
-    const { cupcakesInCart, allCookiesObject, numberOfItemsInCart } = useContext(SiteContext)
+    const { cupcakesInCart, numberOfItemsInCart } = useContext(SiteContext)
 
-    console.log(cupcakesInCart)
+    //console.log(cupcakesInCart)
 
     const cupcakeDetails = cupcakesInCart.map(item =>{
         if(item.productCount > 0 && item.productImg){
@@ -25,7 +25,7 @@ export function Cart() {
     const handleSubmit = () =>{
         console.log('🎉🎉🎉')
         //alert slow and display last date clicked and not current
-        alert(allCookiesObject)
+        //alert(allCookiesObject)
     }
     
 
