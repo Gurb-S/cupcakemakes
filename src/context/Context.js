@@ -60,7 +60,7 @@ export function SiteProvider({ children }){
         })
         return cupcakesInCart
     }
-
+    //called here to be able to pass in
     const cupcakesInCart = createCupcakeObject();
 
     //console.log(numberOfItemsInCart)
