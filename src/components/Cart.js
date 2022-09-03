@@ -9,8 +9,6 @@ export function Cart() {
     
     const { cupcakesInCart, numberOfItemsInCart } = useContext(SiteContext)
 
-    //console.log(cupcakesInCart)
-
     const cupcakeDetails = cupcakesInCart.map(item =>{
         if(item.productCount > 0 && item.productImg){
             return <CartCards 
@@ -26,6 +24,7 @@ export function Cart() {
         console.log('🎉🎉🎉')
         //alert slow and display last date clicked and not current
         //alert(allCookiesObject)
+        //this should be the final submit function
     }
     
 
