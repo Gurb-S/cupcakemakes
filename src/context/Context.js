@@ -63,9 +63,14 @@ export function SiteProvider({ children }){
     //called here to be able to pass in
     const cupcakesInCart = createCupcakeObject();
 
-    //console.log(numberOfItemsInCart)
-    //set total
+    //keeps track of the total in cart
+    //not sure if I actually need this
     const [ total, setTotal ] = useState([]);
+
+    /**
+     * 
+     * @returns number - a number that is the total of all the items in the cart
+     */
     const getTotal = () => {
         const cupcakesInCart = createCupcakeObject();
         const totalPrice = cupcakesInCart.map(cupcake => {
