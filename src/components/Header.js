@@ -8,7 +8,7 @@ export function Header() {
     // * use d-lg-none item when screen size large
     
     return(
-        <Container>
+        <Container className="p-0">
             <Navbar bg="light" expand="lg">
                 <Container>
                     <Row className="d-flex align-items-center">
