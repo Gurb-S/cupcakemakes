@@ -7,8 +7,8 @@ import { BodyGradient } from "./BodyGradient";
 export function Body() {
     const cupcakes = products.cupcakes
     const cakes = products.cakes
-    console.log(cupcakes)
-    console.log(cakes)
+    // console.log(cupcakes)
+    // console.log(cakes)
     let key;
     const cupcakeCards = cupcakes.map((card) => {
         key++
@@ -20,12 +20,13 @@ export function Body() {
         />
     })
 
-    const cakeCards = cakes.map((card) => {
-        return <ProductCard 
-            img={card.product_img}
-            name={card.product_name}
-        />
-    })
+    // * creates the card for cakes
+    // const cakeCards = cakes.map((card) => {
+    //     return <ProductCard 
+    //         img={card.product_img}
+    //         name={card.product_name}
+    //     />
+    // })
     return(
         <>
             <BodyGradient />
@@ -40,9 +41,10 @@ export function Body() {
                         {cupcakeCards}
                     </Row>
                 </Container>
-                <a  href="https://www.google.com" className="text-center fs-3">View More</a>
+                // ! Do not delete
+                // * code for displaying cake cards
+                {/* <a  href="https://www.google.com" className="text-center fs-3">View More</a>
                 <Container>
-                {/* <hr className="mb-3"></hr> */}
                 <h1 className="mt-3 fs-1">
                     CAKES
                 </h1>
@@ -51,7 +53,7 @@ export function Body() {
                     <Row className="mb-2 m-auto" xs={2} md={4}>
                         {cakeCards}
                     </Row>
-                </Container>
+                </Container> */}
             </div>
         </>
     )
