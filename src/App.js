@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Header } from "./components/Header";
 import { Body } from "./components/Body";
 import { ProductPage } from "./components/ProductPage";
-import { Cart, Checkout } from "./components/Cart";
+import { Cart } from "./components/Cart";
 
 
 function App() {
