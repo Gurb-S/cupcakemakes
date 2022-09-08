@@ -41,8 +41,8 @@ export function Body() {
                         {cupcakeCards}
                     </Row>
                 </Container>
-                // ! Do not delete
-                // * code for displaying cake cards
+               {/*// ! Do not delete
+                // * code for displaying cake cards} */}
                 {/* <a  href="https://www.google.com" className="text-center fs-3">View More</a>
                 <Container>
                 <h1 className="mt-3 fs-1">
