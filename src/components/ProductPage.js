@@ -4,6 +4,8 @@ import { useParams } from 'react-router-dom'
 import products from '../data/data.json'
 import SiteContext from '../context/Context';
 import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 export function ProductPage() {
 
