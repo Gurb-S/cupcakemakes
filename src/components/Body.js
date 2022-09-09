@@ -6,7 +6,7 @@ import { BodyGradient } from "./BodyGradient";
 
 export function Body() {
     const cupcakes = products.cupcakes
-    const cakes = products.cakes
+    //const cakes = products.cakes
     // console.log(cupcakes)
     // console.log(cakes)
     let key;
