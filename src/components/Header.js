@@ -4,6 +4,7 @@ import SiteContext from "../context/Context"
 
 export function Header() {
 
+    // imports number of items in cart from context api
     const { numberOfItemsInCart } = useContext(SiteContext)
     // * use d-lg-none item when screen size large
     
