@@ -11,16 +11,22 @@ export function ProductPage() {
 
     // stores the value of the id param in the url
     const { id } = useParams();
+    
     // gets the cupcake who's id matches the number in the url
     const cupcake = products.cupcakes[id];
+
     //import from context api
     const { setCookie } = useContext(SiteContext);
+
     // name of cupcake selected
     let cupcakeName = cupcake.product_name;
+
     // price of the cupcake selected
     let cupcakePrice = cupcake.product_price;
+
     // keeps track of counter on page
     const [ count, setCount ] = useState(1);
+    
     // when submitted creates a cookie with the name of the cupcake and number of cupcakes
     const handleSubmit = (e) =>{
         e.preventDefault();
