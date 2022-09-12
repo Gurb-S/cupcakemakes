@@ -6,7 +6,8 @@ import { OrderDate } from "./OrderDate"
 import { Button } from "react-bootstrap"
 
 export function Cart() {
-    
+
+    //import the from context api
     const { cupcakesInCart, numberOfItemsInCart } = useContext(SiteContext)
 
     const cupcakeDetails = cupcakesInCart.map(item =>{
