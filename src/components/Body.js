@@ -26,6 +26,7 @@ export function Body() {
     //         name={card.product_name}
     //     />
     // })
+    // * end creating cupcake
     return(
         <>
             <BodyGradient />
