@@ -10,6 +10,7 @@ export function Cart() {
     //import the from context api
     const { cupcakesInCart, numberOfItemsInCart } = useContext(SiteContext)
 
+    // takes the attributes for items in cart and passes them into the CartCards component
     const cupcakeDetails = cupcakesInCart.map(item =>{
         if(item.productCount > 0 && item.productImg){
             return <CartCards 
