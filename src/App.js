@@ -9,6 +9,7 @@ import { Header } from "./components/Header";
 import { Body } from "./components/Body";
 import { ProductPage } from "./components/ProductPage";
 import { Cart } from "./components/Cart";
+import { CustomOrder } from "./components/CustomOrder";
 
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Body />}/>
             <Route path="/products/:id" element={<ProductPage />}/>
-            <Route path="/cart" element={<Cart />} />
+            <Route path="/cart" element={<Cart />}/>
+            <Route path="/custom" element={<CustomOrder />}/>
           </Routes>
         </Container>
       </Router>
