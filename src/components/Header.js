@@ -45,8 +45,8 @@ export function Header() {
                                     <Nav className="me-auto">
                                         <Nav.Link href="/">Home</Nav.Link>
                                         <Nav.Link href="/custom">Custom Cake</Nav.Link>
-                                        <Nav.Link href="/">Cupcake Gallery</Nav.Link>
-                                        <Nav.Link href="/">Cake Gallery</Nav.Link>
+                                        {/* <Nav.Link href="/">Cupcake Gallery</Nav.Link>
+                                        <Nav.Link href="/">Cake Gallery</Nav.Link> */}
                                     </Nav>
                                 </div>
                             </div>
