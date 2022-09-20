@@ -83,7 +83,7 @@ export function ProductPage() {
                             </Form.Text>
                         </Col>
                         <Col className='w-30 p-3'>
-                            <Button variant="primary" type="submit">
+                            <Button variant="primary" type="submit" className='rounded-pill'>
                                 Add to Cart
                             </Button>
                         </Col>
