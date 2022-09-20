@@ -39,7 +39,7 @@ export function Cart() {
             {numberOfItemsInCart 
             ?   
             <form onClick={handleSubmit} className="text-center my-4">
-                <Button variant="outline-success">Place Order</Button>
+                <Button variant="outline-success" className="rounded-pill">Place Order</Button>
             </form>
             : <></> }
         </div>
