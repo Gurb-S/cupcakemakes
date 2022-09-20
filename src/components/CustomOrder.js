@@ -13,10 +13,10 @@ export function CustomOrder() {
                 <Form.Control type='tel' placeholder='(555) 555-5555' className='rounded-pill'/>
             </Form.Group>
             <Form.Group className='m-auto mb-3 w-75 p-3' controlId='formBasicDesc'>
-                <Form.Label>Descibe the style of cupcakes you would like</Form.Label>
-                <Form.Control as='textarea' rows={3} className='rounded-4'/>
+                <Form.Label>Description</Form.Label>
+                <Form.Control as='textarea' rows={3} placeholder='Describe the style of cupcakes you would like' style={{ height: '200px' }} className='rounded-4'/>
             </Form.Group>
-            <Button variant="primary" type="submit">Submit</Button>
+            <Button variant="outline-primary" type="submit" className='rounded-pill'>Submit</Button>
         </Form>
     )
 }
