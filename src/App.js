@@ -17,13 +17,14 @@ function App() {
     <SiteProvider>
       <Router>
         <Container className="p-0">
-          <Header />
+          {/* <Header /> */}
           <Routes>
             <Route path="/" element={<Body />}/>
             <Route path="/products/:id" element={<ProductPage />}/>
             <Route path="/cart" element={<Cart />}/>
             <Route path="/custom" element={<CustomOrder />}/>
           </Routes>
+          <Header />
         </Container>
       </Router>
     </SiteProvider>
