@@ -4,6 +4,7 @@ import { CartCards } from "./CartCards"
 import { Total } from "./Total"
 import { OrderDate } from "./OrderDate"
 import { Button } from "react-bootstrap"
+import { BackBtn } from "./BackBtn"
 
 export function Cart() {
 
@@ -32,7 +33,11 @@ export function Cart() {
 
     return (
         <div>
-            <h1 className="text-center mt-3">Cart</h1>
+            <div className="mt-3 mx-2 d-flex justify-content-between">
+                <BackBtn />
+                <h1 className="align-self-center">Cart</h1>
+                <a href="/"><img src={"https://ik.imagekit.io/dod5kjssy/imgs/logo"} height={50} width={50} alt="logo" className="rounded-circle"></img></a>
+            </div>
             {numberOfItemsInCart ? cupcakeDetails : <h2 className="text-center mt-5">Cart is Empty</h2>}
             <Total />
             {numberOfItemsInCart ? <OrderDate /> : null}
