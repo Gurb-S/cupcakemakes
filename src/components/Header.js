@@ -6,10 +6,10 @@ export function Header() {
 
     // imports number of items in cart from context api
     const { numberOfItemsInCart } = useContext(SiteContext)
-    // * use d-lg-none item when screen size large
+    // * use d-lg-none item to only display the item if screen size is large or larger
     
     return(
-        <Container className="p-0">
+        <Container className="p-0 footer">
             <Navbar bg="light" expand="lg">
                 <Container>
                     <Row className="d-flex align-items-center">
