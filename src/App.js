@@ -12,19 +12,21 @@ import { Cart } from "./components/Cart";
 import { CustomOrder } from "./components/CustomOrder";
 
 
+// TODO: make different footer for PWA 
+// TODO: make different header for PWA
+
 function App() {
   return (
     <SiteProvider>
       <Router>
         <Container className="p-0">
-          {/* <Header /> */}
+          <Header />
           <Routes>
             <Route path="/" element={<Body />}/>
             <Route path="/products/:id" element={<ProductPage />}/>
             <Route path="/cart" element={<Cart />}/>
             <Route path="/custom" element={<CustomOrder />}/>
           </Routes>
-          <Header />
         </Container>
       </Router>
     </SiteProvider>
