@@ -4,7 +4,7 @@
             "id": 0,
             "product_name":"Blueberry Macaron",
             "product_img": [ 
-                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/pink_swirl_1",
+                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/blueberry_cookie_1",
                 "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/blueberry_cookie_2"
             ],
             "product_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
@@ -13,63 +13,80 @@
         {
             "id": 1,
             "product_name": "Chocolate Splash",
-            "product_img": "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/oreo",
+            "product_img": [ 
+                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/choc_splash_1",
+                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/choc_splash_2" 
+            ],
             "product_desc": "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
             "product_price": 15
         },
         {
             "id": 2,
             "product_name": "Fruit Assortment",
-            "product_img": "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/pretzel",
+            "product_img": [ 
+                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/fruit_assortment_1",
+                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/fruit_assortment_2" 
+            ],
             "product_desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             "product_price": 15
         },
         {
             "id": 3,
             "product_name": "Golden Sprinkle",
-            "product_img": "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/white",
+            "product_img": [ 
+                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/golden_1",
+                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/golden_2"
+            ],
             "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a",
             "product_price": 15
         },
         {
             "id": 4,
-            "product_name": "Assortment",
-            "product_img": "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/assortment",
+            "product_name": "Kiwi Macaron",
+            "product_img": [ 
+                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/kiwi_blue_1",
+                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/kiwi_blue_2" 
+            ],
             "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a",
             "product_price": 15
         },
         {
             "id": 5,
-            "product_name": "Kiwi Macaron",
-            "product_img": "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/swirl",
+            "product_name": "Oreo Delight",
+            "product_img": [ 
+                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/oreo_1",
+                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/oreo_2" 
+            ],
             "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a",
             "product_price": 15
         },
         {
             "id": 6,
-            "product_name": "Oreo Delight",
-            "product_img": "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/pink",
+            "product_name": "Pink Swirl",
+            "product_img": [ 
+                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/pink_swirl_1",
+                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/pink_swirl_2"
+            ],
             "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a",
             "product_price": 15
         },
         {
             "id": 7,
-            "product_name": "Pink Swirl",
-            "product_img": "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/carmel",
-            "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a",
-            "product_price": 15
-        },
-        {
-            "id": 8,
             "product_name": "Pretzel Delight",
-            "product_img": "img",
+            "product_img": [ 
+                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/pretzel_1",
+                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/pretzel_2" 
+            ],
             "product_desc": "This is the desc",
             "product_price": 15
         },
         {
-            "id": 9,
+            "id": 8,
             "product_name": "Salmon Swirl",
-            "product_img": "img",
+            "product_img": [ 
+                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/salmon_swirl_1",
+                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/salmon_swirl_3" 
+            ],
             "product_desc": "This is another desc",
             "product_price": 15
         }
