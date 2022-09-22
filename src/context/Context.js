@@ -46,7 +46,10 @@ export function SiteProvider({ children }){
             // loops through cupcake data file
             for(let j = 0; j < products.cupcakes.length;j++){
                 if(products.cupcakes[j].product_name === cupcake[0]){
-                    productImgs = products.cupcakes[j].product_img
+                    productImgs = [
+                        products.cupcakes[j].product_img[0],
+                        products.cupcakes[j].product_img[1]
+                    ]
                     productPrices = products.cupcakes[j].product_price
                     numberOfItemsInCart ++
                 }
