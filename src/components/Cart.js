@@ -15,7 +15,7 @@ export function Cart() {
     const cupcakeDetails = cupcakesInCart.map(item =>{
         if(item.productCount > 0 && item.productImg){
             return <CartCards 
-                img={item.productImg}
+                img={item.productImg[0]}
                 name={item.productName}
                 amount={item.productCount}
                 price={item.productPrice}
