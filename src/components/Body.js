@@ -13,7 +13,7 @@ export function Body() {
         key++
         return <ProductCard 
             id={card.id}
-            img={card.product_img}
+            img={card.product_img[0]}
             name={card.product_name}
             key={key}
         />
