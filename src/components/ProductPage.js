@@ -24,6 +24,12 @@ export function ProductPage() {
     // price of the cupcake selected
     let cupcakePrice = cupcake.product_price;
 
+    // 1st imgs of cupcake selected
+    let cupcakeImg1 = cupcake.product_img[0];
+
+    // 2nd imgs of cupcake selected
+    let cupcakeImg2 = cupcake.product_img[1];
+
     // keeps track of counter on page
     const [ count, setCount ] = useState(1);
     
@@ -42,16 +48,10 @@ export function ProductPage() {
             <h1 className="my-4 fs-1">{cupcake.product_name}</h1>
             <Carousel>
                 <Carousel.Item>
-                    <img className="d-block w-100" src={`${cupcake.product_img}`} width={300} height={300} alt="img of cupcake" />
+                    <img className="d-block w-100" src={`${cupcakeImg1}`} width={300} height={300} alt="img of cupcake" />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="d-block w-100" src={`${products.cupcakes[1].product_img}`} width={300} height={300} alt="img of cupcake" />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img className="d-block w-100" src={`${products.cupcakes[2].product_img}`} width={300} height={300} alt="img of cupcake" />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img className="d-block w-100" src={`${products.cupcakes[3].product_img}`} width={300} height={300} alt="img of cupcake"/>
+                    <img className="d-block w-100" src={`${cupcakeImg2}`} width={300} height={300} alt="img of cupcake" />
                 </Carousel.Item>
             </Carousel>
             <div className='text-start'>
