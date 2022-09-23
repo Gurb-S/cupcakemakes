@@ -2,10 +2,10 @@
     "cupcakes" : [
         {
             "id": 0,
-            "product_name":"Blueberry Macaron",
+            "product_name":"Blueberry & Macaron",
             "product_img": [ 
-                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/blueberry_cookie_1",
-                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/blueberry_cookie_2"
+                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/blueberry_cookie_main",
+                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/blueberry_cookie_second"
             ],
             "product_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
             "product_price": 15
@@ -14,7 +14,7 @@
             "id": 1,
             "product_name": "Chocolate Splash",
             "product_img": [ 
-                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/choc_splash_1",
+                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/test_choc",
                 "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/choc_splash_2" 
             ],
             "product_desc": "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
