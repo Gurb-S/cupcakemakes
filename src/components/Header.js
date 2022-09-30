@@ -10,7 +10,7 @@ export function Header() {
     
     return(
         <Container className="p-0 footer">
-            <Navbar bg="light" expand="lg">
+            <Navbar bg="primary" expand="lg">
                 <Container>
                     <Row className="d-flex align-items-center">
                         <Col>
