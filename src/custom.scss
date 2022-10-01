@@ -5,6 +5,13 @@ $dark: #9F7F9C;
 $light: #DDD0DA;
 
 
+.main-gradient{
+    background-image: url('../public/abstract');
+}
+
+// * <a href="https://www.flaticon.com/free-icons/hamburger" title="hamburger icons">Hamburger icons created by exomoon design studio - Flaticon</a>
+// * attribute for hamburger icon
+
 @media screen and (display-mode: standalone) {
     .footer {
         margin-bottom: 20rem;
