@@ -25,7 +25,7 @@ export function CustomOrder() {
                     <Form.Label>Description</Form.Label>
                     <Form.Control as='textarea' rows={3} placeholder='Describe the style of cupcakes you would like' style={{ height: '250px' }} className='rounded-4'/>
                 </Form.Group>
-                <Button variant="primary" type="submit" className='rounded-pill'>Submit</Button>
+                <Button variant="primary" type="submit" className='rounded-pill px-4'>Submit</Button>
             </Form>
         </div>
     )
