@@ -1,11 +1,13 @@
 import { Button } from "react-bootstrap";
 import back from "../imgs/icons/back.png";
 
-export function BackBtn() {
+export function BackBtn(props) {
+    console.log(props)
     return(
-        <Button variant="info" className="d-lg-none" href="/"><img src={back} width={40} height={40}/></Button>
+        <div className="mt-3 mx-2 d-flex justify-content-between">
+            <Button variant="info" className="d-lg-none my-auto" href="/"><img src={back} width={40} height={40}/></Button>
+            <h1 className="align-self-center">{props.page}</h1>
+            <a href="/"><img src={"https://ik.imagekit.io/dod5kjssy/imgs/logo"} height={50} width={50} alt="logo" className="rounded-circle"></img></a>
+        </div>
     )
 }
-
-///run/media/gurb/64BE4FAE295985E0/github/cupcakemakes/src/imgs/icons/previous_medium.png
-//src/imgs/icons/previous_medium.png
