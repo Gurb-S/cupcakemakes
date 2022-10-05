@@ -1,0 +1,23 @@
+/* // TODO: add dark gradient overtop */
+
+.main-gradient{
+    background: linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.75)), url("../public/abstract");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* // * <a href="https://www.flaticon.com/free-icons/hamburger" title="hamburger icons">Hamburger icons created by exomoon design studio - Flaticon</a>
+// * attribute for hamburger icon */
+
+@media screen and (display-mode: standalone) {
+    .footer {
+        margin-bottom: 20rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        background-color: rgb(235, 195, 64);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}
