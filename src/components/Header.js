@@ -37,14 +37,14 @@ export function Header() {
                                     <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
                                 </svg>
                             </button>
-                            <div className="offcanvas offcanvas-top" tabIndex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                            <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
                                 <div className="offcanvas-header">
                                     <h5 className="offcanvas-title" id="offcanvasTopLabel">Menu</h5>
                                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
                                 <div className="offcanvas-body">
                                     <Nav className="me-auto">
-                                        <Nav.Link href="/">Home:</Nav.Link>
+                                        <Nav.Link href="/">Home</Nav.Link>
                                         <Nav.Link href="/custom">Custom Cupcake</Nav.Link>
                                         {/* <Nav.Link href="/">Cupcake Gallery</Nav.Link>
                                         <Nav.Link href="/">Cake Gallery</Nav.Link> */}
@@ -58,6 +58,3 @@ export function Header() {
         </Container>
     )
 }
-{/* <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-</svg> */}
