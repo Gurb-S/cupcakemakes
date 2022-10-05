@@ -5,6 +5,7 @@ import products from '../data/data.json'
 import SiteContext from '../context/Context';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { BackBtn } from './BackBtn';
 
 
 export function ProductPage() {
@@ -45,7 +46,8 @@ export function ProductPage() {
 
     return(
         <Container className='text-center'>
-            <h1 className="my-4 fs-1">{cupcake.product_name}</h1>
+            {/* <h1 className="my-4 fs-1">{cupcake.product_name}</h1> */}
+            <BackBtn page={cupcake.product_name}/>
             <Carousel>
                 <Carousel.Item>
                     <img className="d-block w-100" src={`${cupcakeImg1}`} width={300} height={300} alt="img of cupcake" />
