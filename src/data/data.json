@@ -2,7 +2,7 @@
     "cupcakes" : [
         {
             "id": 0,
-            "product_name":"Blueberry & Macaron",
+            "product_name":"Blueberry Macaron",
             "product_img": [ 
                 "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/blueberry_cookie_main",
                 "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/blueberry_cookie_second"
