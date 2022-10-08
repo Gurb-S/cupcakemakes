@@ -20,7 +20,7 @@ function App() {
   return (
     <SiteProvider>
       <Router>
-        <Container className="p-0">
+        <Container className="p-0 bg-light">
           <Header />
           <Routes>
             <Route path="/" element={<Body />}/>
