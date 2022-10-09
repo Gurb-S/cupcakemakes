@@ -15,6 +15,7 @@ import { CustomOrder } from "./components/CustomOrder";
 // TODO: make different footer for PWA 
 // TODO: make different header for PWA
 // TODO: header hidden in background in PWA
+// TODO: make PWA functionality
 
 function App() {
   return (
