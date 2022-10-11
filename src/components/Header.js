@@ -1,7 +1,7 @@
 import React, { useContext } from "react"
 import { Container, Navbar, Row, Col } from "react-bootstrap"
 import SiteContext from "../context/Context"
-import logo from "../imgs/icons/bright_logo-removebg-more-light.png"
+import logo from "../imgs/icons/logo_black.png"
 
 export function Header() {
 
