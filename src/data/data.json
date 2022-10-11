@@ -4,7 +4,7 @@
             "id": 0,
             "product_name":"Blueberry Macaron",
             "product_img": [ 
-                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/blueberry_cookie_main",
+                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/small_imgs/blueberry_maccaron_small_1",
                 "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/blueberry_cookie_second"
             ],
             "product_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
@@ -34,7 +34,7 @@
             "id": 3,
             "product_name": "Golden Sprinkle",
             "product_img": [ 
-                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/golden_1",
+                "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/small_imgs/small_golden_1.jpg",
                 "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/golden_2"
             ],
             "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a",
