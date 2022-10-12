@@ -21,6 +21,7 @@ export function Cart() {
                 price={item.productPrice}
             />
         }
+        return null;
     })
 
     const handleSubmit = () =>{
@@ -45,7 +46,7 @@ export function Cart() {
             {numberOfItemsInCart 
             ?   
             <form onClick={handleSubmit} className="text-center my-4">
-                <Button variant="outline-success" className="rounded-pill">Place Order</Button>
+                <Button variant="primary" className="rounded-pill mb-4">Place Order</Button>
             </form>
             : <></> }
         </div>
