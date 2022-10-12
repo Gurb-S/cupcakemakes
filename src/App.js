@@ -21,7 +21,7 @@ function App() {
   return (
     <SiteProvider>
       <Router>
-        <Container className="p-0 bg-light">
+        <Container className="p-0">
           <Header />
           <Routes>
             <Route path="/" element={<Body />}/>
