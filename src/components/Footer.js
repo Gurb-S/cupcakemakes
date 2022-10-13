@@ -16,10 +16,10 @@ export function Footer(){
               <Nav.Link href="/" className="text-danger">Active</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/cart" className="text-danger test">Cart</Nav.Link>
+              <Nav.Link href="/cart" className="text-danger">Cart</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/custom" className="text-danger footer-link">Custom</Nav.Link>
+              <Nav.Link href="/custom" className="text-danger">Custom</Nav.Link>
             </Nav.Item>
           </Nav>
             {/* <Navbar bg="primary" expand="lg" fixed="bottom">
