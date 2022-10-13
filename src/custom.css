@@ -1,26 +1,26 @@
 /* // TODO: add dark gradient overtop */
 
+/* css for main page graident */
 .main-gradient{
     background: linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.75)), url("https://ik.imagekit.io/dod5kjssy/imgs/cupcake/small_imgs/abstract");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/* // * <a href="https://www.flaticon.com/free-icons/hamburger" title="hamburger icons">Hamburger icons created by exomoon design studio - Flaticon</a>
-// * attribute for hamburger icon */
+/* apply this to get hide content meant for PWA */
+.web-mode{
+    display: none !important;
+}
 
+/* media query for PWA mode */
 @media screen and (display-mode: standalone) {
-    /* .footer {
-        margin-bottom: 20rem;
-        margin-top: 1rem;
-        padding: 1rem;
-        background-color: rgb(235, 195, 64);
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-    } */
+    /* apply this to hide content only meant for web mode */
     .no-header{
         display: none;
+    }
+
+    /* apply this to show content in PWA that was hidden by .web-mode in web mode */
+    .pwa-mode{
+        display: flex !important;
     }
 }
