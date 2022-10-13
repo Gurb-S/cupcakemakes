@@ -11,7 +11,7 @@ export function Header() {
     // * use d-lg-none item to only display the item if screen size is large or larger
     
     return(
-        <Container className="p-0 footer">
+        <Container className="p-0 footer no-header">
             <Navbar bg="primary" expand="lg">
                 <Container>
                     <Row className="d-flex align-items-center">
