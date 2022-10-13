@@ -5,8 +5,8 @@ import { BackBtn } from './BackBtn';
 export function CustomOrder() {
     return(
         <div className='text-center'>
-            {/* <BackBtn page={"Custom Order"}/> */}
-            <h1 className="my-4">Custom Order</h1>
+            <BackBtn page={"Custom Order"}/>
+            <h1 className="my-4 no-header">Custom Order</h1>
             <Form>
                 <Form.Group className='m-auto mb-3 text-center w-75 p-3' controlId="formBasicName">
                     <Form.Label>Name</Form.Label>

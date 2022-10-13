@@ -46,8 +46,8 @@ export function ProductPage() {
 
     return(
         <Container className='text-center'>
-            <h1 className="my-4 fs-1">{cupcake.product_name}</h1>
-            {/* <BackBtn page={cupcake.product_name}/> */}
+            <BackBtn page={cupcake.product_name} />
+            <h1 className="my-4 fs-1 no-header">{cupcake.product_name}</h1>
             <Carousel variant="dark" fade>
                 <Carousel.Item interval={5000}>
                     <img className="d-block w-100 rounded" src={`${cupcakeImg1}`} width={300} height={300} alt="img of cupcake" />

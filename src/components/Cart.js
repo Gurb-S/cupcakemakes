@@ -34,8 +34,8 @@ export function Cart() {
 
     return (
         <div>
-            {/* <BackBtn page={"Cart"}/> */}
-            <h1 className="text-center my-3">Cart</h1>
+            <BackBtn page={"Cart"}/>
+            <h1 className="text-center my-3 no-header">Cart</h1>
             {numberOfItemsInCart ? cupcakeDetails : <h2 className="text-center mt-5">Cart is Empty</h2>}
             <Total />
             {numberOfItemsInCart ? <OrderDate /> : null}
