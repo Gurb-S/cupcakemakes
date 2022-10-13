@@ -1,17 +1,28 @@
 import React, { useContext } from "react"
-import { Container, Navbar, Row, Col } from "react-bootstrap"
-import { Link } from "react-router-dom"
+import { Container, Navbar, Nav,  Row, Col } from "react-bootstrap"
 import logo from "../imgs/icons/logo_black.png"
 import SiteContext from "../context/Context"
 
 export function Footer(){
 
       // imports number of items in cart from context api
-    const { numberOfItemsInCart } = useContext(SiteContext)
+    // * const { numberOfItemsInCart } = useContext(SiteContext)
     // * use d-lg-none item to only display the item if screen size is large or larger
+
     return(
-        <Container className="p-0 footer">
-            <Navbar bg="primary" expand="lg" fixed="bottom">
+        <Container className="p-0 pwa-mode">
+          <Nav variant="pills" className="justify-content-center fixed-bottom bg-light">
+            <Nav.Item>
+              <Nav.Link href="/" className="text-danger">Active</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="/cart" className="text-danger test">Cart</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="/custom" className="text-danger footer-link">Custom</Nav.Link>
+            </Nav.Item>
+          </Nav>
+            {/* <Navbar bg="primary" expand="lg" fixed="bottom">
                 <Container>
                     <Row className="d-flex align-items-center">
                         <Col>
@@ -39,29 +50,10 @@ export function Footer(){
                                 </svg>
                                 <span className="visually-hidden">link to custom order page</span>
                             </Link>
-                            {/* <button className='btn btn-body d-lg-none' type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" aria-label="Open Menu">                                
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-                                    <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-                                </svg>
-                            </button>
-                            <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-                                <div className="offcanvas-header">
-                                    <h5 className="offcanvas-title" id="offcanvasTopLabel">Menu</h5>
-                                    <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                </div>
-                                <div className="offcanvas-body">
-                                    <Nav className="me-auto">
-                                        <Nav.Link href="/">Home</Nav.Link>
-                                        <Nav.Link href="/custom">Custom Cupcake</Nav.Link>
-                                        <Nav.Link href="/">Cupcake Gallery</Nav.Link>
-                                        <Nav.Link href="/">Cake Gallery</Nav.Link>
-                                    </Nav>
-                                </div>
-                            </div> */}
                         </Col>
                     </Row>
                 </Container>
-            </Navbar>
+            </Navbar> */}
         </Container>
     )
 }
