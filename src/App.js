@@ -10,6 +10,7 @@ import { Body } from "./components/Body";
 import { ProductPage } from "./components/ProductPage";
 import { Cart } from "./components/Cart";
 import { CustomOrder } from "./components/CustomOrder";
+import { Footer } from "./components/Footer";
 
 
 // TODO: make different footer for PWA 
@@ -29,6 +30,7 @@ function App() {
             <Route path="/cart" element={<Cart />}/>
             <Route path="/custom" element={<CustomOrder />}/>
           </Routes>
+          <Footer />
         </Container>
       </Router>
     </SiteProvider>
