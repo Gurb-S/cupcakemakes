@@ -10,7 +10,7 @@
 // * attribute for hamburger icon */
 
 @media screen and (display-mode: standalone) {
-    .footer {
+    /* .footer {
         margin-bottom: 20rem;
         margin-top: 1rem;
         padding: 1rem;
@@ -19,5 +19,8 @@
         bottom: 0;
         left: 0;
         width: 100%;
+    } */
+    .no-header{
+        display: none;
     }
 }
