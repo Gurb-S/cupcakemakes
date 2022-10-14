@@ -43,14 +43,16 @@ export function SiteProvider({ children }){
         const cupcakesInCart = allCookiesObject.map(cupcake => {
             let productImgs;
             let productPrices;
+            let key;
             // loops through cupcake data file
-            for(let j = 0; j < products.cupcakes.length;j++){
-                if(products.cupcakes[j].product_name === cupcake[0]){
+            for(let i = 0; i < products.cupcakes.length;i++){
+                if(products.cupcakes[i].product_name === cupcake[0]){
                     productImgs = [
-                        products.cupcakes[j].product_img[0],
-                        products.cupcakes[j].product_img[1]
+                        products.cupcakes[i].product_img[0],
+                        products.cupcakes[i].product_img[1]
                     ]
-                    productPrices = products.cupcakes[j].product_price
+                    productPrices = products.cupcakes[i].product_price
+                    key = products.cupcakes[i].id
                     numberOfItemsInCart ++
                 }
             }
@@ -58,7 +60,8 @@ export function SiteProvider({ children }){
                 productName: cupcake[0],
                 productCount: cupcake[1],
                 productImg: productImgs,
-                productPrice: productPrices
+                productPrice: productPrices,
+                key: key
             }
         })
         return cupcakesInCart
