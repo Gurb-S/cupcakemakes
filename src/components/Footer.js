@@ -29,7 +29,7 @@ export function Footer(){
               </svg>
               <span className="visually-hidden">link to cart</span>
               {(numberOfItemsInCart > 0 
-              ? <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+              ? <span className="position-absolute top-75 start-75 translate-middle badge rounded-pill bg-warning">
                   {numberOfItemsInCart}
                   <span className="visually-hidden">items in cart</span>
                 </span>
