@@ -27,6 +27,9 @@ export function Body() {
     // * end creating cupcake
     return(
         <>
+            <div className="m-0 pt-5 pb-2 d-flex web-mode pwa-mode justify-content-center bg-primary fixed-top">
+                <h1>Cupcake Makes</h1>
+            </div>
             <BodyGradient />
             <div className="text-center">
                 <h1 className="mt-3 fs-1">
