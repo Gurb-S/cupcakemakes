@@ -8,14 +8,12 @@ export function Body() {
     const cupcakes = products.cupcakes
     //const cakes = products.cakes
 
-    let key;
     const cupcakeCards = cupcakes.map((card) => {
-        key++
         return <ProductCard 
             id={card.id}
             img={card.product_img[0]}
             name={card.product_name}
-            key={key}
+            key={card.id}
         />
     })
 
