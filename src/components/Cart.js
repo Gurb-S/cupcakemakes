@@ -19,6 +19,7 @@ export function Cart() {
                 name={item.productName}
                 amount={item.productCount}
                 price={item.productPrice}
+                key={item.key}
             />
         }
         return null;
