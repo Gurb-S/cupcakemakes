@@ -11,7 +11,7 @@ export function Footer(){
 
     return(
         <Container className="p-0 pwa-mode">
-          <Nav variant="pills" className="justify-content-center fixed-bottom bg-light">
+          <Nav variant="pills" className="justify-content-center fixed-bottom bg-primary">
             <Nav.Item>
               <Nav.Link href="/" className="text-danger">Active</Nav.Link>
             </Nav.Item>
