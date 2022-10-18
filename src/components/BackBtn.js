@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import back from "../imgs/icons/back.png";
 
 export function BackBtn(props) {
-    console.log(props)
+    //console.log(props)
     return(
         <div className="m-0 mb-5 pt-5 d-flex web-mode pwa-mode justify-content-between bg-primary">
             <Button variant="info" className="d-lg-none my-auto ms-1 bg-primary border border-0" href="/"><img src={back} width={40} height={40} alt="back button"/></Button>
