@@ -1,8 +1,8 @@
 import React, { useContext } from "react"
 import { useLocation } from "react-router-dom"
 import { Container, Nav } from "react-bootstrap"
-import black_logo from "../imgs/icons/enlarge_all.png"
-import white_logo from "../imgs/icons/enlarge_all.png"
+import black_logo from "../imgs/icons/black_cupcake.png"
+import white_logo from "../imgs/icons/white_cupcake.png"
 import SiteContext from "../context/Context"
 
 export function Footer(){
