@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import { Container, Navbar, Row, Col } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import SiteContext from "../context/Context"
-import logo from "../imgs/icons/test_new_logo.svg"
+import logo from "../imgs/icons/enlarge_all.png"
 
 export function Header() {
 
@@ -16,8 +16,8 @@ export function Header() {
                 <Container>
                     <Row className="d-flex align-items-center">
                         <Col>
-                            {/* <Navbar.Brand href="/"><img src={logo} height={50} width={50} alt="logo" className="rounded-circle"></img></Navbar.Brand> */}
-                            <Link to={`/`}><a>{logo}</a></Link>
+                            <Navbar.Brand href="/"><img src={logo} height={50} width={50} alt="logo" className="rounded-circle"></img></Navbar.Brand>
+                            {/* <Link to={`/`}><a>{logo}</a></Link> */}
                         </Col>
                     </Row>
                     <Row>
