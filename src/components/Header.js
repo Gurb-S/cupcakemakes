@@ -17,7 +17,6 @@ export function Header() {
                     <Row className="d-flex align-items-center">
                         <Col>
                             <Navbar.Brand href="/"><img src={logo} height={50} width={50} alt="logo" className="rounded-circle"></img></Navbar.Brand>
-                            {/* <Link to={`/`}><a>{logo}</a></Link> */}
                         </Col>
                     </Row>
                     <Row>
