@@ -2,11 +2,19 @@ import { Container, Row } from "react-bootstrap";
 import { ProductCard } from "./ProductCard";
 import products from '../data/data.json'
 import { BodyGradient } from "./BodyGradient";
+import { InstallPWAModal } from "../pwa_prompt/InstallPWAModal";
+import { useIsIOS } from "../pwa_prompt/useIsIOS";
+import React, { useEffect } from "react";
+import { browserName } from "react-device-detect";
 
 
 export function Body() {
     const cupcakes = products.cupcakes
     //const cakes = products.cakes
+
+    const { prompt, daysBetween }  = useIsIOS();
+    console.log(daysBetween)
+    // console.log(browserName)
 
     const cupcakeCards = cupcakes.map((card) => {
         return <ProductCard 
@@ -25,12 +33,24 @@ export function Body() {
     //     />
     // })
     // * end creating cupcake
+    // const [modalShow, setModalShow] = React.useState(false);
+    //console.log(prompt)
     return(
         <>
             <div className="m-0 pt-5 pb-2 d-flex web-mode pwa-mode justify-content-center bg-primary fixed-top">
                 <h1>Cupcake Makes</h1>
             </div>
             <BodyGradient />
+            { prompt && <InstallPWAModal /> }
+            {/* <Button variant="primary" onClick={() => setModalShow(true)}>
+                Launch vertically centered modal
+            </Button>
+
+            <InstallPWAModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+            /> */}
+            {/* <InstallPWAModal /> */}
             <div className="text-center">
                 <h1 className="mt-3 fs-1">
                     CUPCAKES
