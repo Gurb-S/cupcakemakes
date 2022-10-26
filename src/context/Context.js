@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Cookies from "js-cookie";
 import products from '../data/data.json'
 
@@ -91,7 +91,7 @@ export function SiteProvider({ children }){
         let sum = totalPrice.reduce((a,b) => a + b,0);
         setCookie('Total', sum)
         setTotal(sum)
-        const test = Cookies.get('Total')
+        //const test = Cookies.get('Total')
         //console.log(createCupcakeObject())
         console.log(`🎆🎆🎆${sum}`)
         return sum
