@@ -21,11 +21,13 @@ function checkForIOS(){
     }
 
     const installPrompt = Cookies.get('installPrompt')
-    console.log(installPrompt)
     const prompt = !installPrompt && browserName === "Mobile Safari";
 
     if(prompt && "localStorage" in window){
-        setCookie('installPrompt', 0)
+        // sets a delay so that if no installPrompt cookie is set, we can show the modal before one gets set
+        setTimeout(() =>{
+            setCookie('installPrompt', 0)
+        },1000)
     }
 
     return {prompt};
