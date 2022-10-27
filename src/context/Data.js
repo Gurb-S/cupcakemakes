@@ -4,24 +4,24 @@ const api = (path, method = 'GET', body = null, requireAuth = false, credentials
     const options = {
         method,
         headers: {
-            'Content-Type': 'appliccation/json; charset=utf-8'
-        }
+            'Content-Type': 'application/json; charset=utf-8',
+        },
     }
 
     if(body !== null){
         options.body = JSON.stringify(body);
     }
 
-    return fetch( url, options);
+    return fetch(url, options);
 }
 
-export const sendEmail = async(customerInfo, orderInfo) => {
-    const response = await api(`/email`,'POST', null);
+export const sendEmail = async(data) => {
+    const response = await api(`/sendEmail`,'POST', data, false, null);
     if(response.status === 200){
-        return response.json().then(data => data)
+        return response.status;
     }
     else if(response.status === 401) {
-        return null;
+        return response.status;
     }
     else{
         throw new Error();
