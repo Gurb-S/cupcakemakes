@@ -9,7 +9,7 @@ import { BackBtn } from "./BackBtn"
 export function Cart() {
 
     //import the from context api
-    const { cupcakesInCart, numberOfItemsInCart } = useContext(SiteContext)
+    const { cupcakesInCart, numberOfItemsInCart, sendEmail } = useContext(SiteContext)
 
     // takes the attributes for items in cart and passes them into the CartCards component
     const cupcakeDetails = cupcakesInCart.map(item =>{
@@ -27,9 +27,35 @@ export function Cart() {
 
     const handleSubmit = () =>{
         console.log('🎉🎉🎉')
-        //alert slow and display last date clicked and not current
-        //alert(allCookiesObject)
-        //this should be the final submit function
+        const data = {
+            "order": [
+                {
+                    "customerInfo": 
+                    {
+                        "name": 'Gurb',
+                        "email": 'gurbakhash.sandhu1@gmail.com',
+                        "phoneNumber": '(530)315-5032'
+                    },
+                },
+                {
+                    "orderInfo": {
+                        "cupcakes": {
+                            "cupcake1": {
+                                "name": 'Blueberry Macaron',
+                                "amount": 3
+                            },
+                            "cupcake2": {
+                                "name": 'Salmon Swirl',
+                                "amount": 1
+                            }
+                    },
+                    Total: 345,
+                    orderDate: '12/03/2022'
+                }
+                }
+            ]
+        }
+        sendEmail(data)
     }
     
 
