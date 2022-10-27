@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Cookies from "js-cookie";
 import products from '../data/data.json'
+import { sendEmail } from "./Data";
 
 // * ~variable/array/object~
 
@@ -19,8 +20,6 @@ export function SiteProvider({ children }){
     }
 
     // * READING COOKIES
-
-
     const getCookies = () => {
         // target all cookies and stories them in the variable ~allCookies~
         const allCookies = Cookies.get();
@@ -104,7 +103,8 @@ export function SiteProvider({ children }){
         numberOfItemsInCart,
         createCupcakeObject,
         total,
-        getTotal
+        getTotal,
+        sendEmail
     }
 
     /**
