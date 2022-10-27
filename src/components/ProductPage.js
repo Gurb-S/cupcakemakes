@@ -49,7 +49,7 @@ export function ProductPage() {
             <BackBtn page={cupcake.product_name} />
             <h1 className="my-4 fs-1 no-header">{cupcake.product_name}</h1>
             <Container>
-                <Carousel variant="dark" fade>
+                <Carousel variant="success" fade>
                     <Carousel.Item interval={5000}>
                         <img className="d-block w-100 rounded" src={`${cupcakeImg1}`} width={300} height={300} alt="img of cupcake" />
                     </Carousel.Item>
