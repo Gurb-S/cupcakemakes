@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { browserName } from "react-device-detect";
-import { format, differenceInDays } from 'date-fns'
+import Cookies from "js-cookie";
 
 function checkForIOS(){
 
@@ -11,30 +11,21 @@ function checkForIOS(){
         return false;
     }
 
-    if(browserName === "Mobile Safari"){
-        console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+    const setCookie = (name, count) => {
+        const cookieOptions = {
+            expires: 30, //1 day
+            secure: true,  
+            sameSite: "None"
+        };
+        Cookies.set(`${name}`, count, cookieOptions)
     }
-    // checks if user is using iOS and Safari browser
-    // const ua = window.navigator.userAgent;
-    // const webkit = !!ua.match(/WebKit/i);
-    // const isIPad = !!ua.match(/iPad/i);
-    // const isIPhone = !!ua.match(/iPhone/i)
-    // const isIOS = isIPad || isIPhone;
-    // const isSafari = isIOS && webkit && !ua.match(/CriOS/i);
 
-    // checks the last time the install PWA prompt was shown to user
-    const today = new Date()
-    const lastPrompt = localStorage.getItem('installPrompt');
-    const daysBetween = differenceInDays(lastPrompt, today)
+    const installPrompt = Cookies.get('installPrompt')
+    console.log(installPrompt)
+    const prompt = !installPrompt && browserName === "Mobile Safari";
 
-    console.log(today)
-    console.log(typeof lastPrompt)
-    console.log(daysBetween)
-    // if prompt has never been given or it has been more then 30 days then set prompt to true and set today's date for the date that prompt was given
-    const prompt = (isNaN(daysBetween) || daysBetween > 30) &&  browserName === "Mobile Safari";
-    //(isNaN(days) || days > 30) && 
     if(prompt && "localStorage" in window){
-        localStorage.setItem("installPrompt", today);
+        setCookie('installPrompt', 0)
     }
 
     return {prompt};
