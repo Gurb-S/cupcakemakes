@@ -10,7 +10,7 @@ import { Link } from "react-router-dom"
 export function Cart() {
 
     //import the from context api
-    const { cupcakesInCart, numberOfItemsInCart, sendEmail } = useContext(SiteContext)
+    const { cupcakesInCart, numberOfItemsInCart } = useContext(SiteContext)
 
     // takes the attributes for items in cart and passes them into the CartCards component
     const cupcakeDetails = cupcakesInCart.map(item =>{
