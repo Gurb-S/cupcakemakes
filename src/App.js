@@ -11,6 +11,8 @@ import { ProductPage } from "./components/ProductPage";
 import { Cart } from "./components/Cart";
 import { CustomOrder } from "./components/CustomOrder";
 import { Footer } from "./components/Footer";
+import { Checkout } from "./components/Checkout";
+import { FormSuccess } from "./components/FormSuccess";
 
 
 // TODO: make different footer for PWA 
@@ -29,6 +31,8 @@ function App() {
             <Route path="/products/:id" element={<ProductPage />}/>
             <Route path="/cart" element={<Cart />}/>
             <Route path="/custom" element={<CustomOrder />}/>
+            <Route path="/checkout" element={<Checkout />}/>
+            <Route path="/thanks" element={<FormSuccess /> }/>
           </Routes>
           <Footer />
         </Container>
