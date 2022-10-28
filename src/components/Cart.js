@@ -5,6 +5,7 @@ import { Total } from "./Total"
 import { OrderDate } from "./OrderDate"
 import { Button } from "react-bootstrap"
 import { BackBtn } from "./BackBtn"
+import { Link } from "react-router-dom"
 
 export function Cart() {
 
@@ -25,40 +26,6 @@ export function Cart() {
         return null;
     })
 
-    const handleSubmit = () =>{
-        console.log('🎉🎉🎉')
-        const data = {
-            "order": [
-                {
-                    "customerInfo": 
-                    {
-                        "name": 'Gurb',
-                        "email": 'gurbakhash.sandhu1@gmail.com',
-                        "phoneNumber": '(530)315-5032'
-                    },
-                },
-                {
-                    "orderInfo": {
-                        "cupcakes": {
-                            "cupcake1": {
-                                "name": 'Blueberry Macaron',
-                                "amount": 3
-                            },
-                            "cupcake2": {
-                                "name": 'Salmon Swirl',
-                                "amount": 1
-                            }
-                    },
-                    Total: 345,
-                    orderDate: '12/03/2022'
-                }
-                }
-            ]
-        }
-        sendEmail(data)
-    }
-    
-
     return (
         <div>
             <BackBtn page={"Cart"}/>
@@ -68,9 +35,9 @@ export function Cart() {
             {numberOfItemsInCart ? <OrderDate /> : null}
             {numberOfItemsInCart 
             ?   
-            <form onClick={handleSubmit} className="text-center my-4">
-                <Button variant="primary" className="rounded-pill mb-4">Place Order</Button>
-            </form>
+            <div className="text-center my-4">
+                <Button variant="primary" className="rounded-pill mb-4"><Link to={`/checkout`} className="text-decoration-none text-danger">Checkout</Link></Button>
+            </div>
             : <></> }
         </div>
     )
