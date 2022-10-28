@@ -46,8 +46,7 @@ export function Checkout(){
         const phone = e.target.phone.value 
         //console.log(e.target.email.value)
         const email = e.target.email.value
-        console.log(email)
-
+        
         const data = {
             "order": [
                 {
@@ -72,7 +71,7 @@ export function Checkout(){
         sendEmail(data)
             .then(res => {
                 if(res === 200){
-                    alert('Order Submitted')
+                    navigate(`/thanks`)
                 }
             });
     }
