@@ -16,7 +16,6 @@ export function Checkout(){
     const navigate = useNavigate();
 
     const cupcakesInCart = createCupcakeObject();
-    // console.log(cupcakesInCart, '🚰')
 
     // filters out all cupcakes who has a 0 for product count and do do not contain an img. The allows you to filter out all none  cupcake cookies and any cupcake cookies that have 0 in cart
     const cupcakeDetails = cupcakesInCart.filter(item => item.productCount > 0 && item.productImg)
@@ -33,9 +32,14 @@ export function Checkout(){
     const totalPrice = parseInt(Cookies.get('Total'));
     const orderDate = Cookies.get('Order Date')
 
-    console.log(cupcakeOrder)
-    // console.log(orderDate)
-    console.log(cupcakeDetails[0],"😇")
+    //console.log(cupcakeOrder)
+    // // console.log(orderDate)
+    //console.log(cupcakesInCart,"😇")
+    // for(let i = 0; i < cupcakesInCart.length; i++){
+    //     if(cupcakesInCart[i].productName !== "installPrompt"){
+    //         console.log(cupcakesInCart[i].productName)
+    //     }
+    // }
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -71,6 +75,11 @@ export function Checkout(){
         sendEmail(data)
             .then(res => {
                 if(res === 200){
+                    for(let i = 0; i < cupcakesInCart.length; i++){
+                        if(cupcakesInCart[i].productName !== "installPrompt"){
+                            Cookies.remove(cupcakesInCart[i].productName)
+                        }
+                    }
                     navigate(`/thanks`)
                 }
             });
@@ -83,15 +92,15 @@ export function Checkout(){
             <Form name='checkout' method="POST" onSubmit={handleSubmit}>
                 <Form.Group className='m-auto mb-3 text-center w-75 p-3' controlId="formBasicName">
                     <Form.Label>Name</Form.Label>
-                    <Form.Control type='text' name='name' placeholder='Enter your name' className='rounded-pill' required/>
+                    <Form.Control type='text' name='name' placeholder='Enter your name' className='rounded-pill' />
                 </Form.Group>
                 <Form.Group className='m-auto mb-3 w-75 p-3' controlId='formBasicNumber'>
                     <Form.Label>Phone Number</Form.Label>
-                    <Form.Control type='tel' name='phone' placeholder='(555) 555-5555' className='rounded-pill' required/>
+                    <Form.Control type='tel' name='phone' placeholder='(555) 555-5555' className='rounded-pill' />
                 </Form.Group>
                 <Form.Group className='m-auto mb-3 text-center w-75 p-3' controlId="formBasicName">
                     <Form.Label>Email</Form.Label>
-                    <Form.Control type='text' name='email' placeholder='Enter your email' className='rounded-pill' required/>
+                    <Form.Control type='text' name='email' placeholder='Enter your email' className='rounded-pill' />
                 </Form.Group>
                 <Button variant="primary" type="submit" className='rounded-pill px-4 mb-4'>Submit</Button>
             </Form>
