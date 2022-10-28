@@ -69,7 +69,6 @@ export function SiteProvider({ children }){
     const cupcakesInCart = createCupcakeObject();
 
     //keeps track of the total in cart
-    //not sure if I actually need this
     const [ total, setTotal ] = useState([]);
 
     /**
@@ -104,7 +103,8 @@ export function SiteProvider({ children }){
         createCupcakeObject,
         total,
         getTotal,
-        sendEmail
+        sendEmail,
+        getCookies
     }
 
     /**
