@@ -1,5 +1,5 @@
 const api = (path, method = 'GET', body = null, requireAuth = false, credentials = null) => {
-    const url = 'http://localhost:5000/api' + path;
+    const url = 'https://cupcakemes.herokuapp.com/' + path;
 
     const options = {
         method,
