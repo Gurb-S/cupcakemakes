@@ -13,6 +13,8 @@ import { CustomOrder } from "./components/CustomOrder";
 import { Footer } from "./components/Footer";
 import { Checkout } from "./components/Checkout";
 import { FormSuccess } from "./components/FormSuccess";
+import { EmailNotSent } from "./components/EmailNotSent";
+import { ServerError } from "./components/ServerError";
 
 
 // TODO: make different footer for PWA 
@@ -33,6 +35,8 @@ function App() {
             <Route path="/custom" element={<CustomOrder />}/>
             <Route path="/checkout" element={<Checkout />}/>
             <Route path="/thanks" element={<FormSuccess /> }/>
+            <Route path="/order-error" element={<EmailNotSent />}/>
+            <Route path="/server-error" element={<ServerError />}/>
           </Routes>
           <Footer />
         </Container>
