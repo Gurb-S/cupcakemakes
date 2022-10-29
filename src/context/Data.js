@@ -23,6 +23,9 @@ export const sendEmail = async(data) => {
     else if(response.status === 401) {
         return response.status;
     }
+    else if(response.status){
+        return response.status;
+    }
     else{
         throw new Error();
     }
