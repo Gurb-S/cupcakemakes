@@ -82,7 +82,16 @@ export function Checkout(){
                     }
                     navigate(`/thanks`)
                 }
-            });
+                else if(res === 403){
+                    navigate(`/order-error`)
+                }
+                else{
+                    navigate(`/server-error`)
+                }
+            })
+            .catch(error => {
+                navigate(`/server-error`)
+            })
     }
 
     return(
