@@ -12,6 +12,11 @@
     display: none !important;
 }
 
+/* apply to display smallest text possible */
+.small-text{
+    font-size: xx-small;
+}
+
 /* media query for PWA mode */
 @media screen and (display-mode: standalone) {
     /* apply this to hide content only meant for web mode */
