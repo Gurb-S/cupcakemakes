@@ -15,7 +15,7 @@ export function Footer(){
     // * use d-lg-none item to only display the item if screen size is large or larger
 
     return(
-        <Container className="p-0 mt-5 pb-5 pwa-mode web-mode">
+        <Container className="p-0 pb-5 pwa-mode web-mode">
           <Nav variant="pills" className="justify-content-evenly align-items-center fixed-bottom bg-primary pb-2">
             <Nav.Item>
               <Nav.Link href="/"><img src={(currentPage === "/" ? white_logo : black_logo)} height={45} width={45}   alt="logo" className="rounded-circle"></img> 
