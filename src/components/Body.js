@@ -4,9 +4,7 @@ import products from '../data/data.json'
 import { BodyGradient } from "./BodyGradient";
 import { InstallPWAModal } from "../pwa_prompt/InstallPWAModal";
 import { useIsIOS } from "../pwa_prompt/useIsIOS";
-import React, { useEffect } from "react";
-import { browserName } from "react-device-detect";
-
+import React from "react";
 
 export function Body() {
     const cupcakes = products.cupcakes
@@ -75,6 +73,7 @@ export function Body() {
                         {cakeCards}
                     </Row>
                 </Container> */}
+                <p className="small-text fw-light">V 1.12</p>
             </div>
         </>
     )
