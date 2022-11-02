@@ -7,6 +7,8 @@ import { useIsIOS } from "../pwa_prompt/useIsIOS";
 import React from "react";
 
 export function Body() {
+
+    // TODO: in desktop mode, display img on left side of card and name and desc on right side of card
     const cupcakes = products.cupcakes
     //const cakes = products.cakes
 
