@@ -6,7 +6,7 @@ export function ProductCard(props) {
         <Col className='mb-4'>
             <Card style={{ width: '10rem' }}>
             <Link to={`products/${props.id}`} className="link-danger text-decoration-none">
-                <Card.Img variant='top' src={`${props.img}`} width={150} height={150} alt="img of cupcake" />
+                <Card.Img variant='top' src={`${props.img}`} width={150} height={150} alt={`${props.name} Img`} />
                 <Card.Body className='p-1 pt-2'>
                     <Card.Title className='fs-6'>{props.name}</Card.Title>
                 </Card.Body>
