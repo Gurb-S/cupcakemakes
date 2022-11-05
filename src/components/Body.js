@@ -43,7 +43,7 @@ export function Body() {
                     CUPCAKES
                 </h1>
                 <p>*All cupcakes start at $15 a dozen</p>
-                <Container>
+                <Container className="d-sm-block d-md-none">
                 <hr className="mb-3"></hr>
                     <Row className="mb-2 m-auto" xs={2} md={4}>
                         {cupcakeCards}
