@@ -54,13 +54,13 @@ export function Body() {
                 </h1>
                 <p>*All cupcakes start at $15 a dozen</p>
                 {/* className="d-sm-block d-md-none" */}
-                <Container className="d-lg-none d-xl-block">
+                <Container className="d-lg-none">
                     <hr className="mb-3"></hr>
                     <Row className="mb-2 m-auto" xs={2} md={4}>
                         {cupcakeCards}
                     </Row>
                 </Container>
-                <Container className="d-none d-lg-block d-xl-none">
+                <Container className="d-none d-lg-block">
                     <hr className="mb-3"></hr>
                     <Row className="mb-2 m-auto" xs={2} md={4}>
                         {cupcakeCardsDesktop}
