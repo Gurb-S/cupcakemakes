@@ -16,6 +16,7 @@ import { FormSuccess } from "./components/FormSuccess";
 import { EmailNotSent } from "./components/EmailNotSent";
 import { ServerError } from "./components/ServerError";
 import { Error } from "./components/Error"
+import { ProductCardDesktop } from "./components/ProductCardDesktop";
 
 
 // TODO: make different footer for PWA 
@@ -38,6 +39,7 @@ function App() {
             <Route path="/thanks" element={<FormSuccess /> }/>
             <Route path="/order-error" element={<EmailNotSent />}/>
             <Route path="/server-error" element={<ServerError />}/>
+            <Route path="/test" element={<ProductCardDesktop />} />
             <Route path="*" element={<Error />}/>
           </Routes>
           <Footer />
