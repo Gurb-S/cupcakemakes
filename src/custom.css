@@ -7,6 +7,10 @@
     background-size: cover;
 }
 
+/* apply to display dark overlay gradient */
+.overlay-gradient{
+    background: linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.75))
+}
 /* apply this to get hide content meant for PWA */
 .web-mode{
     display: none !important;
