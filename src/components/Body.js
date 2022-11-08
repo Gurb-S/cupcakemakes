@@ -5,6 +5,7 @@ import { BodyGradient } from "./BodyGradient";
 import { InstallPWAModal } from "../pwa_prompt/InstallPWAModal";
 import { useIsIOS } from "../pwa_prompt/useIsIOS";
 import React from "react";
+import { ProductCardDesktop } from "./ProductCardDesktop";
 
 export function Body() {
 
@@ -15,7 +16,16 @@ export function Body() {
     const { prompt }  = useIsIOS();
 
     const cupcakeCards = cupcakes.map((card) => {
-        return <ProductCard 
+        return <ProductCard
+            id={card.id}
+            img={card.product_img[0]}
+            name={card.product_name}
+            key={card.id}
+        />
+    })
+
+    const cupcakeCardsDesktop = cupcakes.map((card) => {
+        return <ProductCardDesktop
             id={card.id}
             img={card.product_img[0]}
             name={card.product_name}
@@ -43,10 +53,17 @@ export function Body() {
                     CUPCAKES
                 </h1>
                 <p>*All cupcakes start at $15 a dozen</p>
-                <Container className="d-sm-block d-md-none">
-                <hr className="mb-3"></hr>
+                {/* className="d-sm-block d-md-none" */}
+                <Container className="d-lg-none d-xl-block">
+                    <hr className="mb-3"></hr>
                     <Row className="mb-2 m-auto" xs={2} md={4}>
                         {cupcakeCards}
+                    </Row>
+                </Container>
+                <Container className="d-none d-lg-block d-xl-none">
+                    <hr className="mb-3"></hr>
+                    <Row className="mb-2 m-auto" xs={2} md={4}>
+                        {cupcakeCardsDesktop}
                     </Row>
                 </Container>
                {/*// ! Do not delete
