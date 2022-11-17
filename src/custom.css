@@ -21,6 +21,14 @@
     font-size: xx-small;
 }
 
+/* apply to make height 500px for large screens or bigger */
+@media screen and (min-width: 992px) {
+    .large{
+        height: 500px;
+    }
+}
+  
+
 /* media query for PWA mode */
 @media screen and (display-mode: standalone) {
     /* apply this to hide content only meant for web mode */
