@@ -79,7 +79,7 @@ export function Body() {
                         {cakeCards}
                     </Row>
                 </Container> */}
-                <p className="small-text fw-light">V 1.1</p>
+                <p className="small-text fw-light">V 1.3</p>
             </div>
         </>
     )
