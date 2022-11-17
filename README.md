@@ -16,4 +16,5 @@ www.cupcakemakes.com
 - add proper desc for products
 - change name of kiwi macaron
 - change name of pink swirl
+- make main gradient bigger when on large screens
 - add error handling for user who going to `/products`
