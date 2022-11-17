@@ -16,13 +16,12 @@ import { FormSuccess } from "./components/FormSuccess";
 import { EmailNotSent } from "./components/EmailNotSent";
 import { ServerError } from "./components/ServerError";
 import { Error } from "./components/Error"
-import { ProductPageDesktop } from "./components/ProductPageDesktop";
 
 
-// TODO: make different footer for PWA 
-// TODO: make different header for PWA
-// TODO: header hidden in background in PWA
-// TODO: make PWA functionality
+// // TODO: make different footer for PWA 
+// // TODO: make different header for PWA
+// // TODO: header hidden in background in PWA
+// // TODO: make PWA functionality
 
 function App() {
   return (
@@ -33,13 +32,13 @@ function App() {
           <Routes>
             <Route path="/" element={<Body />}/>
             <Route path="/products/:id" element={<ProductPage />}/>
+            <Route path="/products" element={<Error />}/>
             <Route path="/cart" element={<Cart />}/>
             <Route path="/custom" element={<CustomOrder />}/>
             <Route path="/checkout" element={<Checkout />}/>
             <Route path="/thanks" element={<FormSuccess /> }/>
             <Route path="/order-error" element={<EmailNotSent />}/>
             <Route path="/server-error" element={<ServerError />}/>
-            <Route path="/test/:id" element={<ProductPageDesktop />} />
             <Route path="*" element={<Error />}/>
           </Routes>
           <Footer />
