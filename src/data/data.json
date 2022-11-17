@@ -7,7 +7,7 @@
                 "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/small_imgs/blueberry_maccaron_small_1?ik-sdk-version=javascript-1.4.3&updatedAt=1668572639460",
                 "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/blueberry_cookie_second"
             ],
-            "product_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+            "product_desc": "The combination of chocolate and vanilla cupcakes with vanilla frosting topped with macarons and blueberries.",
             "product_price": 15
         },
         {
@@ -17,7 +17,7 @@
                 "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/small_imgs/fruit_small_1",
                 "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/fruit_assortment_2" 
             ],
-            "product_desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "product_desc": "Chocolate and vanilla with toppings including macarons, strawberries, raspberries and chocolate.",
             "product_price": 15
         },
         {
@@ -27,17 +27,17 @@
                 "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/small_imgs/small_golden_1.jpg",
                 "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/golden_2"
             ],
-            "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a",
+            "product_desc": "Combination of chocolate and vanilla cupcakes with customer messages on top. Optional caramel drizzle available.",
             "product_price": 15
         },
         {
             "id": 3,
-            "product_name": "Kiwi Macaron",
+            "product_name": "Kiwi Oreo",
             "product_img": [ 
                 "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/small_imgs/blue_kiwi_1_small",
                 "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/kiwi_blue_2" 
             ],
-            "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a",
+            "product_desc": "Oreo dipped in blue frosting and fresh kiwis on vanilla and chocolate cupcakes.",
             "product_price": 15
         },
         {
@@ -47,17 +47,17 @@
                 "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/small_imgs/oreo_small_1",
                 "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/oreo_2" 
             ],
-            "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a",
+            "product_desc": "Chocolate cupcakes with delicious oreos on top.",
             "product_price": 15
         },
         {
             "id": 5,
-            "product_name": "Pink Swirl",
+            "product_name": "Pink Flower",
             "product_img": [ 
                 "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/small_imgs/pink_swirl_small_1",
                 "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/pink_swirl_2"
             ],
-            "product_desc": "rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Cursus risus at ultrices mi tempus imperdiet nulla. Nulla at volutpat diam ut venenatis tellus in. Ut lectus a",
+            "product_desc": "Chocolate cupcakes with a beautiful pink frosting flower and vanilla cupcakes with white flowers.",
             "product_price": 15
         },
         {
@@ -67,7 +67,7 @@
                 "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/small_imgs/pretzel_small_1",
                 "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/pretzel_2" 
             ],
-            "product_desc": "This is the desc fhfhdfjdfdmdbfn",
+            "product_desc": "Vanilla cupcakes with crunchy pretzels and a hint of caramel drizzle.",
             "product_price": 15
         },
         {
@@ -77,7 +77,7 @@
                 "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/small_imgs/salmon_swirl_1",
                 "https://ik.imagekit.io/dod5kjssy/imgs/cupcake/salmon_swirl_3" 
             ],
-            "product_desc": "This is another desc",
+            "product_desc": "Cupcakes perfect for Valentine's day or any other special occasion. Topped with a variety of designs with pink and white frosting, these cupcakes will make a perfect treat for a special occasion.",
             "product_price": 15
         }
     ],
