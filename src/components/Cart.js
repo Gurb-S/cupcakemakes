@@ -3,7 +3,7 @@ import SiteContext from "../context/Context"
 import { CartCards } from "./CartCards"
 import { Total } from "./Total"
 import { OrderDate } from "./OrderDate"
-import { Button } from "react-bootstrap"
+import { Button, Row, Col } from "react-bootstrap"
 import { BackBtn } from "./BackBtn"
 import { Link } from "react-router-dom"
 
@@ -30,15 +30,21 @@ export function Cart() {
         <div>
             <BackBtn page={"Cart"}/>
             <h1 className="text-center my-3 no-header">Cart</h1>
-            {numberOfItemsInCart ? cupcakeDetails : <h2 className="text-center mt-5">Cart is Empty</h2>}
-            <Total />
-            {numberOfItemsInCart ? <OrderDate /> : null}
+            <Row>
+                <Col xs={12} md={7}>
+                    {numberOfItemsInCart ? cupcakeDetails : <h2 className="text-center mt-5">Cart is Empty</h2>}
+                </Col>
+                <Col xs={12} md={5}>
+                        <Total />
+                    {numberOfItemsInCart ? <OrderDate /> : null}
+                </Col>
+            </Row>
             {numberOfItemsInCart 
             ?   
             <div className="text-center my-4">
                 <Button variant="primary" className="rounded-pill mb-4"><Link to={`/checkout`} className="text-decoration-none text-danger">Checkout</Link></Button>
             </div>
             : <></> }
-        </div>
+    </div>
     )
 }
