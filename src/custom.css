@@ -26,6 +26,15 @@
     .large{
         height: 500px;
     }
+    .large-screen{
+        margin-top: 10%;
+        font-size: x-large;
+        font-weight: bolder;
+    }
+    .large-text{
+        font-size: medium;
+        font-weight: 700;
+    }
 }
   
 
